@@ -26,9 +26,18 @@ Images in this project are provided as content, not part of the design. Keep thi
 ### Requirements 
 
 1. Semantically correct HTML is required as this will be the model for prod app integration
+1. Thing in terms of '*components*'; if all parts of the UI were lego blocks, who would you code that?
 1. Images are to be cropped correctly and compression is to take performance into account
 1. Project is to take a 'mobile first' approach to Responsive Web Design, next breakpoint snap expected at standard desktop width
 1. All CSS measurements should use elastic units unless a pixel specific unit is required for both mobile and desktop
+1. All code should be written from the perspective if running on a server. Relative paths to files (`../image.png)` will not be admissible to the assignment
+1. Run your project from a server
+	* Python
+		* [Python simple server](http://www.anotheruiguy.com/ux-design-dev/_book/learning-computers/pyserver.html)
+		* No special setup and runs great
+	* Node w/Express
+		* [node-sass-boilerplate](https://github.com/anotheruiguy/node-sass-boilerplate)
+		* Ignore the stuff with Sass and Grunt, we will cover that later, but you can use the Express framework and the Node server script to serve up static content if you desire
 
 ### Constraints 
 
