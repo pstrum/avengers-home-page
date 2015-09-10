@@ -24,7 +24,7 @@ button {
 }
 
 h3 {
-  font-size: 1.375em;
+  font-size: 1.777em;
 }
 
 
@@ -108,6 +108,42 @@ ICON FONTS
 
 
 /*
+SUB SECTION HEADERS
+*/
+
+.sub-section-header {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.horizontal-rule {
+  display: inline-block;
+  position: relative;
+}
+
+.horizontal-rule:before,
+.horizontal-rule:after {
+  content: " ";
+  position: absolute;
+  height: .5em;
+  border-bottom: 1px solid white;
+  top: 0;
+  width: 5%;
+}
+
+.horizontal-rule:before {
+  right: 100%;
+  margin-right: .5em;
+}
+.horizontal-rule:after {
+  left: 100%;
+  margin-left: .5em;
+}
+
+
+/*
 PRICING COMPONENTS
 */
 
@@ -118,6 +154,7 @@ PRICING COMPONENTS
 
 .pricing {
   width: 90%;
+  margin: 0 auto;
 }
 
 .pricing-header {
@@ -130,6 +167,7 @@ PRICING COMPONENTS
 
 li[class^="pricing"] {
   padding: 1em;
+  background-color: #fff;
   border-top: 1px solid #fd6632;
 }
 
