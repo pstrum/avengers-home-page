@@ -24,6 +24,10 @@ p, button {
   color: #fff;
 }
 
+h2 {
+  font-size: 2.369em;
+}
+
 h3 {
   font-size: 1.777em;
 }
@@ -38,8 +42,14 @@ button {
 MODIFIERS
 */
 
-.header-white {
+.white-color {
   color: #fff;
+}
+
+@media screen and (min-width: 50em) {
+  .small-paragraph {
+    width: 45%;
+  }
 }
 
 
@@ -129,38 +139,22 @@ ICON FONTS
 
 
 /*
-SUB SECTION HEADERS
+SECTION HEADERS
 */
 
-.sub-section-header {
-  width: 80%;
+.section-header {
+  max-width: 90%;
   margin: 0 auto;
   padding: .75em 0;
   text-align: center;
 }
 
-.horizontal-rule {
-  display: inline-block;
-  position: relative;
-}
-
-.horizontal-rule:before,
-.horizontal-rule:after {
-  content: " ";
-  position: absolute;
-  height: .5em;
-  border-bottom: 1px solid white;
-  top: 0;
-  width: 5%;
-}
-
-.horizontal-rule:before {
-  right: 100%;
-  margin-right: .5em;
-}
-.horizontal-rule:after {
-  left: 100%;
-  margin-left: .5em;
+@media screen and (min-width: 50em) {
+  .section-header {
+    background: url(../img/horizontal-white-line.svg) no-repeat left,
+                url(../img/horizontal-white-line.svg) no-repeat right;
+    background-size: 35%;
+  }
 }
 
 
@@ -218,11 +212,6 @@ li[class^="pricing"] {
 }
 
 @media screen and (min-width: 32em) {
-  .horizontal-rule:before,
-  .horizontal-rule:after {
-    width: 30%;
-  }
-
   .pricing-tables {
     display: inline-block;
     width: 45%;
@@ -230,11 +219,6 @@ li[class^="pricing"] {
 }
 
 @media screen and (min-width: 50em) {
-  .horizontal-rule:before,
-  .horizontal-rule:after {
-    width: 50%;
-  }
-
   .pricing {
     display: flex;
     flex-wrap: wrap;
@@ -328,16 +312,22 @@ TEAM
 SERVICES COMPONENTS
 */
 
+.services-container {
+  max-width: 940px;
+  padding: 0 .5em;
+  text-align: center;
+}
+
 .services-text {
+  display: inline-block;
+  padding: .5em 0;
   font-size: 1.333em;
   line-height: 1.4;
 }
 
 .services-category {
-  width: 19em;
-  padding: .7em;
-  text-align: center;
-  background-color: #fd6632;
+  /*width: 19em;*/
+  padding: 1.333em;
 }
 
 .services-header {
@@ -380,6 +370,7 @@ SERVICES COMPONENTS
   }
 
   .services-text {
+    padding: 1em;
     font-size: 1em;
   }
 
