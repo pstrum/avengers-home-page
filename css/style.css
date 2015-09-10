@@ -10,24 +10,26 @@ html {
   box-sizing: inherit;
 }
 
+body, button {
+  font-size: 16px;
+}
+
 body {
   font-family: "helvetica neue", arial, sans-serif;
-  font-size: 16px;
   background-color: #fff;
 }
 
-button {
+p, button {
   color: #fff;
-  background-color: #fd6632;
-  border: none;
 }
 
 h3 {
   font-size: 1.777em;
 }
 
-p {
-  color: #fff;
+button {
+  background-color: #fd6632;
+  border: none;
 }
 
 /*
@@ -156,7 +158,7 @@ PRICING COMPONENTS
 */
 
 [class^="pricing"] {
-  font-size: 1rem;
+  /*font-size: 1em;*/
   text-align: center;
 }
 
@@ -244,6 +246,7 @@ li[class^="pricing"] {
   }
 }
 
+
 /*
 TEAM
 */
@@ -307,4 +310,51 @@ TEAM
 
 .icon-google-plus {
   background-color: #fabc00;
+}
+
+
+/*
+SERVICES COMPONENTS
+*/
+
+.services-text {
+  font-size: 1.333em;
+  line-height: 1.4;
+}
+
+.services-category {
+  width: 19em;
+  text-align: center;
+  background-color: #fd6632;
+}
+
+.services-header {
+  padding-bottom: .8em;
+}
+
+[data-title="ux-design"]:after {
+  content: "\e60b";
+}
+
+[data-title="laboratory"]:after {
+  content: "\e600";
+}
+
+[data-title="development"]:after {
+  content: "\e601";
+}
+
+.services-header:after {
+  display: block;
+  width: 2em;
+  height: 2em;
+  margin: .4em auto 0;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  font-family: 'ico-fonts';
+  font-size: 2em;
+  text-align: center;
+  color: #2e2e2e;
+  background-color: #fff;
+  border-radius: 50%;
 }
