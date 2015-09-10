@@ -114,7 +114,7 @@ SUB SECTION HEADERS
 .sub-section-header {
   width: 80%;
   margin: 0 auto;
-  padding: 1em 0;
+  padding: .75em 0;
   text-align: center;
 }
 
@@ -152,14 +152,14 @@ PRICING COMPONENTS
   text-align: center;
 }
 
-.pricing {
+.pricing-tables {
   width: 90%;
-  margin: 0 auto;
+  margin: 1em auto;
 }
 
 .pricing-header {
-  padding: .5em;
-  font-size: 1.777em;
+  padding: .5em .2em;
+  font-size: 1.5em;
   font-weight: lighter;
   letter-spacing: .1em;
   background-color: #7e3319;
@@ -194,4 +194,44 @@ li[class^="pricing"] {
   margin: 0 auto;
   padding: .85em 1.35em;
   background-color: #fd6632;
+}
+
+@media screen and (min-width: 32em) {
+  .horizontal-rule:before,
+  .horizontal-rule:after {
+    width: 30%;
+  }
+
+  .pricing-tables {
+    display: inline-block;
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 50em) {
+  .horizontal-rule:before,
+  .horizontal-rule:after {
+    width: 50%;
+  }
+
+  .pricing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  .sub-section-header {
+    align-self: stretch;
+    flex-basis: 100%;
+    padding-bottom: 1.333em;
+  }
+
+  .pricing-tables {
+    width: 24%;
+  }
+
+  .pricing-button {
+    width: auto;
+  }
 }
