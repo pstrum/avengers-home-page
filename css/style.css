@@ -11,9 +11,10 @@ html {
 }
 
 body {
-  font-family: helvetica;
+  font-family: "helvetica neue", arial, sans-serif;
   font-size: 16px;
   color: #fff;
+  background-color: #fff;
 }
 
 button {
@@ -110,20 +111,49 @@ ICON FONTS
 PRICING COMPONENTS
 */
 
-.pricing-header {
+[class^="pricing"] {
+  font-size: 1rem;
+  text-align: center;
+}
 
+.pricing {
+  width: 90%;
+}
+
+.pricing-header {
+  padding: .5em;
+  font-size: 1.777em;
+  font-weight: lighter;
+  letter-spacing: .1em;
+  background-color: #7e3319;
+}
+
+li[class^="pricing"] {
+  padding: 1em;
+  border-top: 1px solid #fd6632;
+}
+
+.pricing-plan {
+  color: #fd6632;
 }
 
 .pricing-cost {
-
+  font-size: 1.333em;
+  font-weight: bold;
 }
 
 .pricing-stats {
+  color: #2e2e2e;
+}
 
+.pricing-button-container {
+  padding: 1.2em;
+  background-color: #be4c25;
 }
 
 .pricing-button {
-  font-size: .8125em;
+  width: 90%;
+  margin: 0 auto;
   padding: .85em 1.35em;
   background-color: #fd6632;
 }
