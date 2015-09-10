@@ -13,7 +13,6 @@ html {
 body {
   font-family: "helvetica neue", arial, sans-serif;
   font-size: 16px;
-  color: #fff;
   background-color: #fff;
 }
 
@@ -27,6 +26,9 @@ h3 {
   font-size: 1.777em;
 }
 
+p {
+  color: #fff;
+}
 
 /*
 ICON FONTS
@@ -55,6 +57,12 @@ ICON FONTS
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:link, [class*=" icon-"]:link,
+[class^="icon-"]:visited, [class*=" icon-"]:visited {
+  text-decoration: none;
+  color: #fff;
 }
 
 .icon-gear:before {
@@ -234,4 +242,69 @@ li[class^="pricing"] {
   .pricing-button {
     width: auto;
   }
+}
+
+/*
+TEAM
+*/
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.team-profile {
+  width: 17em;
+  text-align: center;
+  margin: 1em 0;
+  display: inline-block;
+}
+
+.profile-header {
+  color: #2e2e2e;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: bold;
+}
+
+.profile-text {
+  color: #7c8387;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.profile-image {
+  border-radius: 100%;
+  width: 11em;
+  margin-top: 1em;
+}
+
+.social-icons {
+  font-size: 1.5em;
+  display: inline-block;
+  padding: 0.3em;
+  margin: 1em 0.1em 1em 0.1em;
+}
+
+.icon-facebook {
+  background-color: #305fc6;
+}
+
+.icon-twitter {
+  background-color: #32bdff;
+}
+
+.icon-dribbble {
+  background-color: #dd2667;
+}
+
+.icon-linkedin2 {
+  background-color: #2ca1eb;
+}
+
+.icon-google-plus {
+  background-color: #fabc00;
 }
