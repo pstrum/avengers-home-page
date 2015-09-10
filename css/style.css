@@ -16,6 +16,7 @@ body, button {
 
 body {
   font-family: "helvetica neue", arial, sans-serif;
+  color: #2e2e2e;
   background-color: #fff;
 }
 
@@ -31,6 +32,16 @@ button {
   background-color: #fd6632;
   border: none;
 }
+
+
+/*
+MODIFIERS
+*/
+
+.header-white {
+  color: #fff;
+}
+
 
 /*
 ICON FONTS
@@ -324,6 +335,7 @@ SERVICES COMPONENTS
 
 .services-category {
   width: 19em;
+  padding: .7em;
   text-align: center;
   background-color: #fd6632;
 }
@@ -357,4 +369,20 @@ SERVICES COMPONENTS
   color: #2e2e2e;
   background-color: #fff;
   border-radius: 50%;
+}
+
+@media screen and (min-width: 50em) {
+  .services-category-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+  }
+
+  .services-text {
+    font-size: 1em;
+  }
+
+  .services-category {
+    width: 30%;
 }
