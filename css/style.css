@@ -142,7 +142,7 @@ ICON FONTS
 SECTION HEADERS
 */
 
-.section-header {
+.section-header, .sub-section-header {
   max-width: 90%;
   margin: 0 auto;
   padding: .75em 0;
@@ -150,10 +150,21 @@ SECTION HEADERS
 }
 
 @media screen and (min-width: 50em) {
-  .section-header {
+  .section-header, .sub-section-header {
     background: url(../img/horizontal-white-line.svg) no-repeat left,
                 url(../img/horizontal-white-line.svg) no-repeat right;
+  }
+
+  .section-header {
     background-size: 35%;
+  }
+
+  .sub-section-header {
+    align-self: stretch;
+    flex-basis: 100%;
+    margin: 0 6em;
+    padding: 1.333em 2em;
+    background-size: 28%;
   }
 }
 
@@ -224,12 +235,6 @@ li[class^="pricing"] {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
-  }
-
-  .sub-section-header {
-    align-self: stretch;
-    flex-basis: 100%;
-    padding-bottom: 1.333em;
   }
 
   .pricing-tables {
@@ -331,7 +336,7 @@ SERVICES COMPONENTS
 }
 
 .services-header {
-  padding-bottom: .8em;
+  padding: .5em 0;
 }
 
 [data-title="ux-design"]:after {
@@ -375,5 +380,5 @@ SERVICES COMPONENTS
   }
 
   .services-category {
-    width: 30%;
+    width: 33%;
 }
