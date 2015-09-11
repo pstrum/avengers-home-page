@@ -32,6 +32,10 @@ button {
   border: none;
 }
 
+.circle {
+  border-radius: 100%;
+}
+
 /*
 ICON FONTS
 */
@@ -154,6 +158,53 @@ SUB SECTION HEADERS
 
 
 /*
+SERVICES COMPONENTS
+*/
+
+.services-text {
+  font-size: 1.333em;
+  line-height: 1.4;
+}
+
+.services-category {
+  width: 19em;
+  text-align: center;
+  background-color: #fd6632;
+}
+
+.services-header {
+  padding-bottom: .8em;
+}
+
+[data-title="ux-design"]:after {
+  content: "\e60b";
+}
+
+[data-title="laboratory"]:after {
+  content: "\e600";
+}
+
+[data-title="development"]:after {
+  content: "\e601";
+}
+
+.services-header:after {
+  display: block;
+  width: 2em;
+  height: 2em;
+  margin: .4em auto 0;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  font-family: 'ico-fonts';
+  font-size: 2em;
+  text-align: center;
+  color: #2e2e2e;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+
+/*
 PRICING COMPONENTS
 */
 
@@ -255,6 +306,8 @@ TEAM
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  max-width: 68em;
+  margin: 0 auto;
 }
 
 .team-profile {
@@ -264,29 +317,39 @@ TEAM
   display: inline-block;
 }
 
-.profile-header {
-  color: #2e2e2e;
-  font-size: 1.5em;
+.team-header {
   line-height: 1.5em;
   font-weight: bold;
 }
 
-.profile-text {
+.team-text {
   color: #7c8387;
   font-size: 0.75em;
   line-height: 1.5em;
-  width: 80%;
   margin: 0 auto;
 }
 
+.team-description-text {
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.profile-header {
+  color: #2e2e2e;
+  font-size: 1.5em;
+}
+
+.profile-text {
+  width: 80%;
+}
+
 .profile-image {
-  border-radius: 100%;
   width: 11em;
   margin-top: 1em;
 }
 
 .social-icons {
-  font-size: 1.5em;
+  font-size: 1.3em;
   display: inline-block;
   padding: 0.3em;
   margin: 1em 0.1em 1em 0.1em;
@@ -312,49 +375,73 @@ TEAM
   background-color: #fabc00;
 }
 
-
-/*
-SERVICES COMPONENTS
-*/
-
-.services-text {
-  font-size: 1.333em;
-  line-height: 1.4;
-}
-
-.services-category {
-  width: 19em;
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 20em;
+  /*min-width: 17em;*/
   text-align: center;
-  background-color: #fd6632;
 }
 
-.services-header {
-  padding-bottom: .8em;
+.client-section-header {
+  width: 100%;
 }
 
-[data-title="ux-design"]:after {
-  content: "\e60b";
+.client-figure {
+  margin: 2em 0;
 }
 
-[data-title="laboratory"]:after {
-  content: "\e600";
-}
-
-[data-title="development"]:after {
-  content: "\e601";
-}
-
-.services-header:after {
+.client-image {
+  width: 5em;
   display: block;
-  width: 2em;
-  height: 2em;
-  margin: .4em auto 0;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  font-family: 'ico-fonts';
-  font-size: 2em;
-  text-align: center;
+  margin: 0 auto;
+}
+
+.client-header {
   color: #2e2e2e;
-  background-color: #fff;
-  border-radius: 50%;
+  font-size: 0.9em;
+  margin: 0.7em 0;
+}
+
+.client-name {
+  color: #fd6632;
+  display: block;
+}
+
+.client-caption {
+  width: 70vw;
+  max-width: 50em;
+}
+
+.client-button {
+  font-size: 0.75em;
+  height: 2.75em;
+  padding: 0.9em 1.1em;
+  margin: 0.5em;
+}
+
+@media screen and (min-width: 40em) {
+  .social-icons {
+    font-size: 1em;
+  }
+  .client-figure {
+    display: flex;
+    align-items: center;
+    margin: 3em 0;
+  }
+  .client-image {
+    margin-right: 2.5vw;
+  }
+  .client-header {
+    margin-top: 0;
+  }
+  .client-name {
+    display: inline-block;
+  }
+  .client-caption {
+    text-align: left;
+    display: inline-block;
+  }
 }
