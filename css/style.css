@@ -428,6 +428,30 @@ PORTFOLIO SLIDER
   visibility: hidden;
 }
 
+.portfolio-section-header a {
+  text-decoration: none;
+  padding: .3em;
+}
+
+.portfolio-selected-category {
+  color: #fff;
+  background-color: #fd6632;
+}
+
+.portfolio-section-header,
+.portfolio-menu {
+  display: inline-block;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  font-size: 1.333rem;
+}
+
+.portfolio-menu a {
+  text-decoration: none;
+  padding: .3em;
+  color: #d4d4d4;
+}
+
 @media screen and (min-width: 50em) {
   .portfolio-section {
     flex-direction: row;
@@ -463,6 +487,19 @@ PORTFOLIO SLIDER
 
   .slider-bullet-active:before {
     color: #fd6632;
+  }
+
+  .portfolio-section-header,
+  .portfolio-menu {
+    font-size: 1rem;
+  }
+
+  .portfolio-section-header {
+    margin-left: calc(30% - 75px);
+  }
+
+  [title="portfolio-categories"] {
+    margin-right: calc(66% - 422px);
   }
 
 }
