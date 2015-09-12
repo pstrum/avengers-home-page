@@ -253,52 +253,6 @@ SERVICES COMPONENTS
 }
 
 
-/*
-SERVICES COMPONENTS
-*/
-
-.services-text {
-  font-size: 1.333em;
-  line-height: 1.4;
-}
-
-.services-category {
-  width: 19em;
-  text-align: center;
-  background-color: #fd6632;
-}
-
-.services-header {
-  padding-bottom: .8em;
-}
-
-[data-title="ux-design"]:after {
-  content: "\e60b";
-}
-
-[data-title="laboratory"]:after {
-  content: "\e600";
-}
-
-[data-title="development"]:after {
-  content: "\e601";
-}
-
-.services-header:after {
-  display: block;
-  width: 2em;
-  height: 2em;
-  margin: .4em auto 0;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  font-family: 'ico-fonts';
-  font-size: 2em;
-  text-align: center;
-  color: #2e2e2e;
-  background-color: #fff;
-  border-radius: 50%;
-}
-
 
 /*
 PRICING COMPONENTS
@@ -378,16 +332,51 @@ li[class^="pricing"] {
 }
 
 
+
 /*
-PORTFOLIO COMPONENTS
+PORTFOLIO SECTION
 */
+
+.portfolio-container {
+  max-width: 940px;
+  padding: 0 .5em;
+}
+
+.portfolio-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+@media screen and (min-width: 50em) {
+  .portfolio-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+  }
+}
+
+
+
+/*
+PORTFOLIO SLIDER
+*/
+
+.portfolio-slider {
+  width: 100%;
+}
 
 .portfolio-slider-figure {
   position: relative;
+  overflow: hidden;
+  direction: rtl;
 }
 
 .portfolio-slider-figure img {
-  min-width: 33em;
+  min-width: 40em;
 }
 
 .portfolio-slider-overlay {
@@ -396,10 +385,11 @@ PORTFOLIO COMPONENTS
 
 .portfolio-slider-caption {
   position: absolute;
-  top: 2%;
-  left: 5%;
-  width: 90%;
+  top: 10%;
+  right: 10%;
+  width: 14em;
   line-height: 1.1;
+  text-align: left;
   text-shadow: 1px 1px 5px #2e2e2e;
 }
 
@@ -411,6 +401,10 @@ PORTFOLIO COMPONENTS
   background-image: linear-gradient(#4dbff7, #5087c8);
   padding: 1em 1em;
   margin: .8em 0;
+}
+
+.portfolio-slider-button:hover {
+  cursor: pointer;
 }
 
 .portfolio-slider-button:before,
@@ -428,6 +422,97 @@ PORTFOLIO COMPONENTS
   content: "\e610";
   padding-right: 1em;
   color: rgba(0,0,0,.3);
+}
+
+.portfolio-slider-bullets[aria-hidden="true"] {
+  visibility: hidden;
+}
+
+@media screen and (min-width: 50em) {
+  .portfolio-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+  }
+
+  .portfolio-slider-caption {
+    top: 20%;
+    right: 25%;
+  }
+
+  .portfolio-slider-bullets[aria-hidden="true"] {
+    visibility: visible;
+  }
+
+  .portfolio-slider-bullets {
+    padding: .3em;
+    font-size: 1.777em;
+    text-align: center;
+  }
+
+  .portfolio-slider-bullets li {
+    display: inline;
+  }
+
+  [title$="bullet"]:before {
+    content: "•";
+    color: #d4d4d4;
+  }
+
+  .slider-bullet-active:before {
+    color: #fd6632;
+  }
+
+}
+
+
+/*
+PORTFOLIO ITEMS
+*/
+
+.portfolio-item {
+  position: relative;
+  max-width: 300px;
+  margin-top: .5em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.portfolio-opacity {
+  opacity: .7;
+}
+
+.portfolio-link-hover:hover {
+  display: block;
+  background: #000;
+}
+
+.portfolio-link-hover:hover:after {
+  position: absolute;
+  top: 30%;
+  left: 42%;
+  width: 1.777em;
+  height: 1.777em;
+  padding-top: .4em;
+  content: "\e608";
+  font-family: 'ico-fonts';
+  font-size: 1.6em;
+  text-align: center;
+  color: #fff;
+  background-color: #fd6632;
+  border-radius: 50%;
+}
+
+.portfolio-caption-header {
+  padding: .5em 0;
+  font-weight: bold;
+  font-size: 1.333em;
+}
+
+.portfolio-category {
+  color: #7c8387;
 }
 
 
