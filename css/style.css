@@ -10,7 +10,7 @@ html {
   box-sizing: inherit;
 }
 
-body, button {
+body, button, input, textarea {
   font-size: 16px;
 }
 
@@ -20,7 +20,10 @@ body {
   background-color: #fff;
 }
 
-p, button {
+p,
+button,
+textarea,
+input {
   color: #fff;
 }
 
@@ -41,6 +44,13 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+input, textarea {
+  display: block;
+  font-weight: bold;
+  background-color: #be4c25;
+  border: none;
 }
 
 
@@ -734,3 +744,50 @@ TEAM
     display: inline-block;
   }
 }
+
+
+
+/*
+CONTACT SECTION
+*/
+
+input::-webkit-input-placeholder {
+  color: #fff;
+  letter-spacing: .1em;
+}
+
+input::-moz-placeholder {
+  color: #fff;
+  letter-spacing: .1em;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 1em;
+  letter-spacing: .1em;
+}
+
+input[type="submit"]  {
+  padding: .7em 2em;
+  font-weight: bold;
+  color: #fd6632;
+  border: none;
+  background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
