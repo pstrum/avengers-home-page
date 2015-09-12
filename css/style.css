@@ -386,7 +386,7 @@ PORTFOLIO SLIDER
 .portfolio-slider-caption {
   position: absolute;
   top: 10%;
-  right: 10%;
+  right: 18%;
   width: 14em;
   line-height: 1.1;
   text-align: left;
@@ -440,10 +440,11 @@ PORTFOLIO SLIDER
 
 .portfolio-section-header,
 .portfolio-menu {
-  display: inline-block;
+  display: block;
   margin-top: .5em;
   margin-bottom: .5em;
   font-size: 1.333rem;
+  text-align: center;
 }
 
 .portfolio-menu a {
@@ -491,6 +492,7 @@ PORTFOLIO SLIDER
 
   .portfolio-section-header,
   .portfolio-menu {
+    display: inline-block;
     font-size: 1rem;
   }
 
