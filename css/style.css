@@ -11,11 +11,11 @@ html {
 }
 
 body, button, input, textarea {
+  font-family: "helvetica neue", arial, sans-serif;
   font-size: 16px;
 }
 
 body {
-  font-family: "helvetica neue", arial, sans-serif;
   color: #2e2e2e;
   background-color: #fff;
 }
@@ -752,11 +752,13 @@ CONTACT SECTION
 */
 
 input::-webkit-input-placeholder {
+  font-family: "helvetica neue", arial, sans-serif;
   color: #fff;
   letter-spacing: .1em;
 }
 
 input::-moz-placeholder {
+  font-family: "helvetica neue", arial, sans-serif;
   color: #fff;
   letter-spacing: .1em;
 }
@@ -777,6 +779,34 @@ input[type="submit"]  {
   border: none;
   background-color: #fff;
 }
+
+.contact-form,
+.contact-map {
+  max-width: 460px;
+}
+
+.contact-map {
+  position: relative;
+}
+
+.contact-map-caption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 75% 70%, 50% 100%, 25% 70%, 0% 70%);
+  padding-top: 1em;
+  padding-bottom: 3em;
+  background-color: rgba(0,0,0,.7);
+}
+
+.contact-map-caption a {
+  display: inline-block;
+  padding: .3em;
+  color: #fff;
+  text-decoration: none;
+}
+
+
 
 
 
