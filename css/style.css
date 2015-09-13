@@ -26,10 +26,12 @@ p, button {
 
 h2 {
   font-size: 2.369em;
+  font-weight: bold;
 }
 
 h3 {
   font-size: 1.777em;
+  font-weight: bold;
 }
 
 button {
@@ -41,6 +43,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  opacity: 0.7;
 }
 
 
@@ -162,7 +165,7 @@ SECTION HEADERS
 }
 
 @media screen and (min-width: 50em) {
-  .section-header, .sub-section-header {
+  .white-line {
     background: url(../img/horizontal-white-line.svg) no-repeat left,
                 url(../img/horizontal-white-line.svg) no-repeat right;
   }
@@ -195,7 +198,7 @@ SERVICES COMPONENTS
 .services-text {
   display: inline-block;
   padding: .5em 0;
-  font-size: 1.333em;
+  /*font-size: 1.333em;*/
   line-height: 1.4;
 }
 
@@ -244,7 +247,7 @@ SERVICES COMPONENTS
 
   .services-text {
     padding: 1em;
-    font-size: 1em;
+    /*font-size: 1em;*/
   }
 
   .services-category {
@@ -592,19 +595,34 @@ PORTFOLIO ITEMS
 TEAM
 */
 
-.team {
+
+.team, .clients {
   display: flex;
   flex-wrap: wrap;
+}
+
+.team {
   justify-content: space-around;
   max-width: 68em;
   margin: 0 auto;
+  text-align: center;
+}
+
+.team-section-header, .client-section-header {
+  width: 100%;
+}
+
+.team-section-header {
+  padding: 0.7em 0;
+}
+
+.team-profile, .social-icons {
+  display: inline-block;
 }
 
 .team-profile {
   width: 17em;
-  text-align: center;
   margin: 1em 0;
-  display: inline-block;
 }
 
 .team-header {
@@ -614,14 +632,15 @@ TEAM
 
 .team-text {
   color: #7c8387;
-  font-size: 0.75em;
+  font-size: 0.9em;
   line-height: 1.5em;
   margin: 0 auto;
 }
 
 .team-description-text {
-  font-size: 0.9em;
-  text-align: center;
+  font-size: 1em;
+  padding: 0 1em;
+  margin-bottom: 1em;
 }
 
 .profile-header {
@@ -636,12 +655,10 @@ TEAM
 .profile-image {
   width: 11em;
   margin: 1em auto 0;
-
 }
 
 .social-icons {
   font-size: 1.3em;
-  display: inline-block;
   padding: 0.3em;
   margin: 1em 0.1em;
 }
@@ -667,30 +684,24 @@ TEAM
 }
 
 .clients {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   min-width: 20em;
-  text-align: center;
-}
-
-.client-section-header {
-  width: 100%;
+  margin-top: 1em;
 }
 
 .client-figure {
-  margin: 2em 0;
+  margin: 1em 0;
 }
 
 .client-image {
   width: 5em;
   margin: 0 auto;
+  opacity: 1;
 }
 
 .client-header {
   color: #2e2e2e;
-  font-size: 0.9em;
   margin: 0.7em 0;
 }
 
@@ -702,6 +713,7 @@ TEAM
 .client-caption {
   width: 70vw;
   max-width: 50em;
+  padding: 0 0.5em;
 }
 
 .client-button {
@@ -711,26 +723,50 @@ TEAM
   margin: 0.5em;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
+  .gray-line {
+    background: url(../img/horizontal-black-line.svg) no-repeat left,
+                url(../img/horizontal-black-line.svg) no-repeat right;
+  }
+
+  .team-section-header {
+    margin: 0 3%;
+    background-size: calc(100% - 11.5em);
+  }
+
+  .team-description-text {
+    margin-bottom: 3em;
+  }
+
   .social-icons {
     font-size: 1em;
   }
+
+  .client-section-header {
+    margin: 0 19.25%;
+    padding: 1.333em 0;
+    background-size: calc(50% - 2.5em);
+  }
+
   .client-figure {
     display: flex;
     align-items: center;
-    margin: 3em 0;
+    margin: 1em 0;
   }
+
   .client-image {
     margin-right: 2.5vw;
   }
+
   .client-header {
     margin-top: 0;
   }
-  .client-name {
+
+  .client-caption, .client-name {
     display: inline-block;
   }
+
   .client-caption {
     text-align: left;
-    display: inline-block;
   }
 }
