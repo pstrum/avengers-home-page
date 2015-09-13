@@ -53,6 +53,10 @@ button {
   border: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 button:active, a:active {
   opacity: 0.8;
 }
@@ -130,7 +134,6 @@ ICON FONTS
 
 [class^="icon-"]:link, [class*=" icon-"]:link,
 [class^="icon-"]:visited, [class*=" icon-"]:visited {
-  text-decoration: none;
   color: #fff;
 }
 
@@ -251,6 +254,38 @@ SECTION HEADERS
   }
 }
 
+/*
+MENU
+*/
+
+.menu {
+  position: fixed;
+  width: 100%;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid #d4d4d4;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 1000;
+}
+
+.menu a {
+  display: inline-block;
+  width: 30%;
+  color: #7c8387;
+  font-weight: bold;
+  padding-top: 0.5em;
+}
+
+@media screen and (min-width: 50em) {
+  .menu {
+    position: static;
+    padding: 0.8em calc(20% - 3em);
+  }
+
+  .menu a {
+    padding-top: 0.1em;
+    width: 16%;
+  }
+}
 
 /*
 SERVICES COMPONENTS
@@ -258,7 +293,7 @@ SERVICES COMPONENTS
 
 .services-container {
   /*max-width: 940px;*/
-  padding: 0 .5em;
+  padding: 2.5em .5em 0;
   text-align: center;
   background-color: #fd6632;
 }
@@ -416,7 +451,7 @@ PORTFOLIO SECTION
   flex-direction: column;
   align-items: center;
   max-width: 68em;
-  padding: 0;
+  padding: 3.5em 0 0;
   margin: 0 auto;
 }
 
@@ -687,7 +722,7 @@ ABOUT
 
 .about {
   background-color: #252629;
-  padding: 1em;
+  padding: 4em 1em 1em;
 }
 
 .about-header, .skills-header {
@@ -792,6 +827,7 @@ TEAM
 
 .team {
   justify-content: space-around;
+  padding-top: 2.5em;
 }
 
 .team-section-header, .client-section-header {
@@ -972,7 +1008,7 @@ CONTACT SECTION
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding: 0 .3em 2em;
+  padding: 2.5em .3em 2em;
   background-color: #fd6632;
 }
 
@@ -1152,7 +1188,7 @@ input[type="submit"]  {
 }
 
 /*
-Footer
+FOOTER
 */
 
 footer {
@@ -1173,7 +1209,7 @@ footer p {
 }
 
 /*
-Media screen modifier
+MEDIA SCREEN MODIFIERS
 */
 
 @media screen and (min-width: 50em) {
