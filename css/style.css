@@ -35,7 +35,7 @@ input {
 }
 
 h1 {
-  font-size: 2.666em;
+  font-size: 2em;
   font-weight: lighter;
   line-height: 1.3;
 }
@@ -219,7 +219,7 @@ SECTION HEADERS
   }
 
   .sub-section-header {
-    align-self: stretch;
+    -webkit-flex-basis: 100%;
     flex-basis: 100%;
     margin: 0 6em;
     padding: 1.333em 2em;
@@ -307,7 +307,7 @@ HEADER & LOGO
   opacity: 1;
   height: 4em;
   width: 4em;
-  margin: .4em auto 1em;
+  margin: 1em auto 1em;
   padding-top: 1em;
   padding-bottom: 1em;
   background: #fd6632;
@@ -322,6 +322,12 @@ HEADER & LOGO
   background-size: cover;
   background: url("../img/orange-underline.svg") no-repeat;
   background-position: bottom;
+}
+
+@media screen and (min-width: 50em) {
+  h1 {
+    font-size: 2.666em;
+  }
 }
 
 
@@ -381,9 +387,13 @@ SERVICES COMPONENTS
 
 @media screen and (min-width: 50em) {
   .services-category-container {
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-justify-content: space-around;
     justify-content: space-around;
+    -webkit-align-content: center;
     align-content: center;
   }
 
@@ -463,9 +473,13 @@ li[class^="pricing"] {
 
 @media screen and (min-width: 50em) {
   .pricing {
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
+    -webkit-align-content: center;
     align-content: center;
   }
 
@@ -485,8 +499,11 @@ PORTFOLIO SECTION
 */
 
 .portfolio-container {
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
   flex-direction: column;
+  -webkit-align-items: center;
   align-items: center;
   max-width: 68em;
   padding: 3.5em 0 0;
@@ -499,21 +516,9 @@ PORTFOLIO SECTION
   margin-top: .2em;
   margin-bottom: .5em;
 }
-/*.portfolio-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}*/
 
 @media screen and (min-width: 50em) {
-  /*.portfolio-section {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
 
-  }*/
   .portfolio-section-header {
     margin: 0 6%;
     padding: 1em 0;
@@ -522,9 +527,13 @@ PORTFOLIO SECTION
 
   .portfolio-container {
     position: relative;
+    -webkit-flex-direction: row;
     flex-direction: row;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-align-items: center;
     align-items: center;
+    -webkit-justify-content: space-around;
     justify-content: space-around;
     padding-top: 2em;
   }
@@ -601,13 +610,6 @@ PORTFOLIO SLIDER
 }
 
 @media screen and (min-width: 50em) {
-/*  .portfolio-section {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-
-  }*/
 
   .portfolio-slider-caption {
     top: 20%;
@@ -671,23 +673,13 @@ PORTFOLIO NAVIGATION
 
 @media screen and (min-width: 50em) {
 
- /* .portfolio-section-header,
-  .portfolio-menu {
-    display: inline-block;
-    font-size: 1rem;
-  }*/
-
-  /*.portfolio-section-header {
-    margin-left: calc(30% - 75px);
-  }*/
-
-  /*[title="portfolio-categories"] {
-    margin-right: calc(66% - 422px);
-  }*/
 
   [title="portfolio navigation"] {
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-basis: 100%;
     flex-basis: 100%;
+    -webkit-justify-content: center;
     justify-content: center;
     margin-top: 1em;
     margin-bottom: 1.777em;
@@ -859,11 +851,18 @@ TEAM
 */
 
 .team, .clients {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .team {
+  -webkit-justify-content: space-around;
   justify-content: space-around;
   padding-top: 2.5em;
 }
@@ -872,7 +871,6 @@ TEAM
 .client-section-header,
 .section-header,
 .sub-section-header,
-.pricing-header,
 .portfolio-section-header,
 .contact-section-header {
   width: 100%;
@@ -951,7 +949,15 @@ TEAM
 }
 
 .clients {
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   min-width: 20em;
   margin-top: 1em;
@@ -995,11 +1001,6 @@ TEAM
                 url(../img/horizontal-black-line.svg) no-repeat right;
   }
 
-  .team-section-header,
-  .client-section-header {
-    text-decoration: none;
-  }
-
   .team-section-header {
     margin: 0 3%;
     background-size: calc(50% - 0.6em);
@@ -1020,7 +1021,15 @@ TEAM
   }
 
   .client-figure {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     margin: 1em 0;
   }
@@ -1048,8 +1057,11 @@ CONTACT SECTION
 */
 
 .contact-section {
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
   flex-direction: column;
+  -webkit-align-items: center;
   align-items: center;
   margin: 0 auto;
   padding: 2.5em .3em 2em;
@@ -1057,7 +1069,6 @@ CONTACT SECTION
 }
 
 .contact-section-header {
-  flex-basis: 94%;
   background-size: calc(100% - 13.5em);
 }
 
@@ -1158,35 +1169,12 @@ input[type="submit"]  {
     position: absolute;
     content: "";
     display: block;
-    width: 20%;
+    width: 200px;
     height: 43px;
     top: 0;
     left: 40%;
     background: url(../img/triangle-white.svg) no-repeat;
   }
-
-  /*.contact-section-header {
-    position: relative;
-    flex-basis: 100%;
-    text-align: center;
-  }
-
-  .contact-section-header:before,
-  .contact-section-header:after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 38%;
-    border-bottom: 1px solid white;
-  }
-
-  .contact-section-header:before {
-    left: 0;
-  }
-
-  .contact-section-header:after {
-    right: 0;
-  }*/
 
   input, textarea, .contact-map-caption {
     font-size: .8em;
@@ -1194,11 +1182,20 @@ input[type="submit"]  {
 
   .contact-section {
     position: relative;
+    -webkit-flex-direction: row;
     flex-direction: row;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-align-items: center;
     align-items: center;
+    -webkit-justify-content: space-around;
     justify-content: space-around;
     padding-top: 2em;
+  }
+
+  .contact-section-header {
+    -webkit-flex-basis: 94%;
+    flex-basis: 94%;
   }
 
   input[type="submit"] {
@@ -1228,6 +1225,7 @@ input[type="submit"]  {
     left: 33%;
     width: 170px;
     padding-bottom: 150px;
+    -webkit-transform: rotate(-30deg) skewX(29deg);
     transform: rotate(-30deg) skewX(29deg);
     background-image: linear-gradient(40.4deg, rgba(0,0,0,.7) 23.5%, rgba(0,0,0,0) 23.5%, rgba(0,0,0,0) 100%);
     border-radius: 10%;
@@ -1260,11 +1258,21 @@ MEDIA SCREEN MODIFIERS
 */
 
 @media screen and (min-width: 50em) {
-  .services-container, .team, .about, footer, .header-content {
+  .services-container, .team, .about, footer, .header-content, .contact-section {
     padding: 6em calc(20% - 7.5em);
   }
 
   .small-paragraph {
     width: 45%;
+  }
+
+  .team-section-header,
+  .client-section-header,
+  .section-header,
+  .sub-section-header,
+  .pricing-header,
+  .portfolio-section-header,
+  .contact-section-header {
+    text-decoration: none;
   }
 }
