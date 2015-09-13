@@ -83,7 +83,7 @@ li {
 progress[value] {
   -webkit-appearance: none;
   appearance: none;
-  height: 1.8em;
+  height: 1.2em;
   width: 100%;
 }
 
@@ -712,7 +712,7 @@ ABOUT
 }
 
 .skills li {
-  margin-bottom: 1.4em;
+  margin-bottom: 1em;
 }
 
 .progress-header {
@@ -766,6 +766,14 @@ progress[value]::-webkit-progress-value {
   .skills-header {
     margin: 0 19.25% 1.5em;
     background-size: calc(50% - 2.25em);
+  }
+
+  .skills li {
+    margin-bottom: 1.4em;
+  }
+
+  progress[value] {
+    height: 1.8em;
   }
 
   .join-us-header {
@@ -892,7 +900,6 @@ TEAM
 .client-caption {
   width: 60vw;
   max-width: 67em;
-  /*padding: 0 0.5em;*/
 }
 
 .client-button {
@@ -1145,11 +1152,32 @@ input[type="submit"]  {
 }
 
 /*
+Footer
+*/
+
+footer {
+  padding-top: 1.5em;
+}
+
+footer p {
+  font-size: 0.95em;
+  color: #7c8387;
+}
+
+.footer-name {
+  color: #fd6632;
+}
+
+.footer-copyright {
+  color: #252629;
+}
+
+/*
 Media screen modifier
 */
 
 @media screen and (min-width: 50em) {
-  .services-container, .team, .about {
+  .services-container, .team, .about, footer {
     padding: 6em calc(20% - 7.5em);
   }
 
