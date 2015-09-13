@@ -96,7 +96,7 @@ ICON FONTS
   text-transform: none;
   line-height: 1;
 
-  /* Better Font Rendering =========== */
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -164,7 +164,8 @@ ICON FONTS
 SECTION HEADERS
 */
 
-.section-header, .sub-section-header {
+.section-header,
+.sub-section-header {
   max-width: 90%;
   margin: 0 auto;
   padding: .75em 0;
@@ -172,7 +173,8 @@ SECTION HEADERS
 }
 
 @media screen and (min-width: 50em) {
-  .section-header, .sub-section-header {
+  .section-header,
+  .sub-section-header {
     background: url(../img/horizontal-white-line.svg) no-repeat left,
                 url(../img/horizontal-white-line.svg) no-repeat right;
   }
@@ -202,7 +204,8 @@ SERVICES COMPONENTS
   background-color: #fd6632;
 }
 
-.services-text {
+.services-text,
+.contact-text {
   display: inline-block;
   padding: .5em 0;
   font-size: 1.333em;
@@ -252,7 +255,8 @@ SERVICES COMPONENTS
     align-content: center;
   }
 
-  .services-text {
+  .services-text,
+  .contact-text {
     padding: 1em;
     font-size: 1em;
   }
@@ -347,12 +351,13 @@ li[class^="pricing"] {
 PORTFOLIO SECTION
 */
 
-.portfolio-container {
+.portfolio-container,
+.contact-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 940px;
-  padding: 0 .5em;
+  padding: 0;
 }
 
 /*.portfolio-section {
@@ -751,6 +756,11 @@ TEAM
 CONTACT SECTION
 */
 
+.contact-section {
+  padding-bottom: 2em;
+  background-color: #fd6632;
+}
+
 input::-webkit-input-placeholder {
   font-family: "helvetica neue", arial, sans-serif;
   color: #fff;
@@ -787,16 +797,38 @@ input[type="submit"]  {
 
 .contact-map {
   position: relative;
+  margin: 1em 0;
 }
 
 .contact-map-caption {
   position: absolute;
+  min-height: 133px;
   top: 0;
   right: 0;
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 75% 70%, 50% 100%, 25% 70%, 0% 70%);
-  padding-top: 1em;
-  padding-bottom: 3em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  line-height: 1.4em;
   background-color: rgba(0,0,0,.7);
+}
+
+.contact-phone:before,
+.contact-email:before,
+.contact-location:before {
+  padding-right: .4em;
+  font-family: 'ico-fonts';
+  vertical-align: bottom;
+}
+
+.contact-phone:before {
+  content: "\e60c";
+}
+
+.contact-email:before {
+  content: "\e602";
+}
+
+.contact-location:before {
+  content: "\e60d";
 }
 
 .contact-map-caption a {
@@ -806,18 +838,72 @@ input[type="submit"]  {
   text-decoration: none;
 }
 
+.contact-weight-light {
+  font-weight: lighter;
+}
 
+@media screen and (min-width: 50em) {
 
+  .contact-section-header {
+    position: relative;
+    flex-basis: 100%;
+    text-align: center;
+  }
 
+  .contact-section-header:before,
+  .contact-section-header:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 38%;
+    border-bottom: 1px solid white;
+  }
 
+  .contact-section-header:before {
+    left: 0;
+  }
 
+  .contact-section-header:after {
+    right: 0;
+  }
 
+  input, textarea, .contact-map-caption {
+    font-size: .8em;
+  }
 
+  .contact-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
 
+  [type="submit"] {
+    margin-left: calc(100% - 155px);
+  }
 
+  .contact-form {
+    margin-top: 2.7em;
+  }
 
+  .contact-map-caption a {
+    padding-right: 3em;
+  }
 
+  .contact-location {
+    margin-top: 2em;
+  }
 
-
-
+  .contact-map-caption:after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 33%;
+    width: 170px;
+    padding-bottom: 150px;
+    transform: rotate(-30deg) skewX(29deg);
+    background-image: linear-gradient(40.4deg, rgba(0,0,0,.7) 23.5%, rgba(0,0,0,0) 23.5%, rgba(0,0,0,0) 100%);
+    border-radius: 10%;
+  }
+}
 
