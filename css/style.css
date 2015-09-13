@@ -18,6 +18,10 @@ body {
   font-family: "helvetica neue", arial, sans-serif;
   color: #2e2e2e;
   background-color: #fff;
+  /*max-width: 68em; 1088*/
+  /*max-width: 100em;*/
+  margin: 0 auto;
+  text-align: center;
 }
 
 p, button {
@@ -34,9 +38,21 @@ h3 {
   font-weight: bold;
 }
 
+h4 {
+  font-size: 0.9em;
+}
+
 button {
   background-color: #fd6632;
   border: none;
+}
+
+button:active, a:active {
+  opacity: 0.8;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 img {
@@ -46,6 +62,16 @@ img {
   opacity: 0.7;
 }
 
+li {
+  list-style-type: none;
+}
+
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 1.8em;
+  width: 100%;
+}
 
 /*
 MODIFIERS
@@ -53,12 +79,6 @@ MODIFIERS
 
 .white-color {
   color: #fff;
-}
-
-@media screen and (min-width: 50em) {
-  .small-paragraph {
-    width: 45%;
-  }
 }
 
 .circle {
@@ -189,7 +209,7 @@ SERVICES COMPONENTS
 */
 
 .services-container {
-  max-width: 940px;
+  /*max-width: 940px;*/
   padding: 0 .5em;
   text-align: center;
   background-color: #fd6632;
@@ -437,11 +457,105 @@ PORTFOLIO COMPONENTS
   color: rgba(0,0,0,.3);
 }
 
+/*
+ABOUT
+*/
+
+.about, .about p {
+  color: #b9bdbf;
+}
+
+.about {
+  background-color: #252629;
+  padding: 1em;
+}
+
+.about-header, .skills-header {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.about-header {
+  font-size: 2.4em;
+  margin-bottom: 0.5em;
+}
+
+.about p {
+  display: inline-block;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+.skills-header {
+  font-size: 1.7em;
+  margin-bottom: 0.8em;
+}
+
+.skills li {
+  margin-bottom: 1.4em;
+}
+
+.progress-header {
+  text-align: left;
+  margin-bottom: 0.3em;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #3a3a3a;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: #fd6632;
+}
+
+.join-us-header {
+  font-weight: normal;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.contact-us-button {
+  font-weight: bold;
+  padding: 0.9em 3.5em;
+}
+
+.about>aside {
+  margin-bottom: 1em;
+}
+
+@media screen and (min-width: 50em) {
+  .about-header, .skills-header {
+    text-decoration: none;
+  }
+
+  .about-header {
+    margin: 0 12% 1em;
+    background-size: calc(50% - 2em);
+  }
+
+  .about p {
+    width: 49.5%;
+    padding: 0 0.5em;
+    margin-bottom: 6em;
+  }
+
+  .skills {
+    margin-bottom: 6em;
+  }
+
+  .skills-header {
+    margin: 0 19.25% 1.5em;
+    background-size: calc(50% - 2.25em);
+  }
+
+  .join-us-header {
+    margin-bottom: 1.5em;
+  }
+}
 
 /*
 TEAM
 */
-
 
 .team, .clients {
   display: flex;
@@ -450,13 +564,11 @@ TEAM
 
 .team {
   justify-content: space-around;
-  max-width: 68em;
-  margin: 0 auto;
-  text-align: center;
 }
 
 .team-section-header, .client-section-header {
   width: 100%;
+  text-decoration: underline;
 }
 
 .team-section-header {
@@ -468,7 +580,7 @@ TEAM
 }
 
 .team-profile {
-  width: 17em;
+  width: 15em;
   margin: 1em 0;
 }
 
@@ -496,7 +608,7 @@ TEAM
 }
 
 .profile-text {
-  width: 80%;
+  width: 95%;
 }
 
 .profile-image {
@@ -558,9 +670,9 @@ TEAM
 }
 
 .client-caption {
-  width: 70vw;
-  max-width: 50em;
-  padding: 0 0.5em;
+  width: 60vw;
+  max-width: 67em;
+  /*padding: 0 0.5em;*/
 }
 
 .client-button {
@@ -576,9 +688,14 @@ TEAM
                 url(../img/horizontal-black-line.svg) no-repeat right;
   }
 
+  .team-section-header,
+  .client-section-header {
+    text-decoration: none;
+  }
+
   .team-section-header {
     margin: 0 3%;
-    background-size: calc(100% - 11.5em);
+    background-size: calc(50% - 0.6em);
   }
 
   .team-description-text {
@@ -602,7 +719,7 @@ TEAM
   }
 
   .client-image {
-    margin-right: 2.5vw;
+    margin-right: 2vw;
   }
 
   .client-header {
@@ -615,5 +732,19 @@ TEAM
 
   .client-caption {
     text-align: left;
+  }
+}
+
+/*
+Media screen modifier
+*/
+
+@media screen and (min-width: 50em) {
+  .services-container, .team, .about {
+    padding: 6em calc(20% - 7.5em);
+  }
+
+  .small-paragraph {
+    width: 45%;
   }
 }
