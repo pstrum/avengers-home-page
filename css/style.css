@@ -34,6 +34,12 @@ input {
   color: #fff;
 }
 
+h1 {
+  font-size: 2.666em;
+  font-weight: lighter;
+  line-height: 1.3;
+}
+
 h2 {
   font-size: 2.369em;
   font-weight: bold;
@@ -253,12 +259,43 @@ SECTION HEADERS
 
 
 /*
+HEADER & LOGO
+*/
+
+.header-content {
+  padding: 3em 0;
+  background-size: cover;
+  background-image: url("../img/header-background.jpg");
+}
+
+.logo {
+  opacity: 1;
+  height: 4em;
+  width: 4em;
+  margin: .4em auto 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background: #fd6632;
+}
+
+.header-logo-text strong {
+  font-weight: normal;
+}
+
+.curve-underline {
+  padding-bottom: .1em;
+  background-size: cover;
+  background: url("../img/orange-underline.svg") no-repeat;
+  background-position: bottom;
+}
+
+
+/*
 SERVICES COMPONENTS
 */
 
 .services-container {
-  /*max-width: 940px;*/
-  padding: 0 .5em;
+  padding: 0 .5em 1em;
   text-align: center;
   background-color: #fd6632;
 }
@@ -276,6 +313,7 @@ SERVICES COMPONENTS
 }
 
 .services-header {
+    min-width: 225px;
   padding: .5em 0;
 }
 
@@ -786,7 +824,13 @@ TEAM
   justify-content: space-around;
 }
 
-.team-section-header, .client-section-header {
+.team-section-header,
+.client-section-header,
+.section-header,
+.sub-section-header,
+.pricing-header,
+.portfolio-section-header,
+.contact-section-header {
   width: 100%;
   text-decoration: underline;
 }
@@ -974,6 +1018,10 @@ CONTACT SECTION
   background-size: calc(100% - 13.5em);
 }
 
+.contact-text {
+  margin-bottom: 1.5em;
+}
+
 input::-webkit-input-placeholder {
   font-family: "helvetica neue", arial, sans-serif;
   color: #fff;
@@ -1107,7 +1155,6 @@ input[type="submit"]  {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    max-width: 68em;
     padding-top: 2em;
   }
 
@@ -1149,7 +1196,7 @@ Media screen modifier
 */
 
 @media screen and (min-width: 50em) {
-  .services-container, .team, .about {
+  .services-container, .team, .about, .header-content {
     padding: 6em calc(20% - 7.5em);
   }
 
