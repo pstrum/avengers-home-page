@@ -318,6 +318,7 @@ PRICING COMPONENTS
 
 .pricing-tables {
   width: 90%;
+  min-width: 220px;
   margin: 1em auto;
 }
 
