@@ -10,7 +10,10 @@ html {
   box-sizing: inherit;
 }
 
-body, button, input, textarea {
+body,
+button,
+input,
+textarea {
   font-family: "helvetica neue", arial, sans-serif;
   font-size: 16px;
 }
@@ -49,7 +52,8 @@ img {
   opacity: 0.7;
 }
 
-input, textarea {
+input,
+textarea {
   display: block;
   font-weight: bold;
   background-color: #be4c25;
@@ -191,6 +195,39 @@ SECTION HEADERS
     margin: 0 6em;
     padding: 1.333em 2em;
     background-size: 28%;
+  }
+
+  .section-arrows-white:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 20%;
+    height: 43px;
+    top: 0;
+    left: 40%;
+    background: url(../img/triangle-white.svg) no-repeat;
+  }
+
+  .section-arrows-orange:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 20%;
+    height: 43px;
+    top: 0;
+    left: 40%;
+    background: url(../img/triangle-orange.svg) no-repeat;
+  }
+
+  .section-arrows-black:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 20%;
+    height: 43px;
+    top: 0;
+    left: 40%;
+    background: url(../img/triangle-black.svg) no-repeat;
   }
 }
 
@@ -353,15 +390,21 @@ li[class^="pricing"] {
 PORTFOLIO SECTION
 */
 
-.portfolio-container,
-.contact-section {
+.portfolio-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 940px;
+  max-width: 68em;
   padding: 0;
+  margin: 0 auto;
 }
 
+.portfolio-section-header {
+  width: 100%;
+  text-align: center;
+  margin-top: .2em;
+  margin-bottom: .5em;
+}
 /*.portfolio-section {
   display: flex;
   flex-direction: column;
@@ -377,11 +420,19 @@ PORTFOLIO SECTION
     justify-content: space-around;
 
   }*/
+  .portfolio-section-header {
+    margin: 0 6%;
+    padding: 1em 0;
+    background-size: calc(100% - 11.5em);
+  }
+
   .portfolio-container {
+    position: relative;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    padding-top: 2em;
   }
 }
 
@@ -403,6 +454,7 @@ PORTFOLIO SLIDER
 
 .portfolio-slider-figure img {
   min-width: 40em;
+  margin: 0 auto;
 }
 
 .portfolio-slider-overlay {
@@ -792,8 +844,17 @@ CONTACT SECTION
 */
 
 .contact-section {
-  padding-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 .3em 2em;
   background-color: #fd6632;
+}
+
+.contact-section-header {
+  flex-basis: 94%;
+  background-size: calc(100% - 13.5em);
 }
 
 input::-webkit-input-placeholder {
@@ -819,6 +880,7 @@ textarea {
 
 input[type="submit"]  {
   padding: .7em 2em;
+  margin: 0 auto;
   font-weight: bold;
   color: #fd6632;
   border: none;
@@ -835,6 +897,10 @@ input[type="submit"]  {
   margin: 1em 0;
 }
 
+.contact-map img {
+  opacity: 1;
+}
+
 .contact-map-caption {
   position: absolute;
   min-height: 133px;
@@ -843,6 +909,7 @@ input[type="submit"]  {
   padding-top: .5em;
   padding-bottom: .5em;
   line-height: 1.4em;
+  text-align: center;
   background-color: rgba(0,0,0,.7);
 }
 
@@ -879,7 +946,18 @@ input[type="submit"]  {
 
 @media screen and (min-width: 50em) {
 
-  .contact-section-header {
+  .section-arrows-white:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 20%;
+    height: 43px;
+    top: 0;
+    left: 40%;
+    background: url(../img/triangle-white.svg) no-repeat;
+  }
+
+  /*.contact-section-header {
     position: relative;
     flex-basis: 100%;
     text-align: center;
@@ -900,25 +978,32 @@ input[type="submit"]  {
 
   .contact-section-header:after {
     right: 0;
-  }
+  }*/
 
   input, textarea, .contact-map-caption {
     font-size: .8em;
   }
 
   .contact-section {
+    position: relative;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    max-width: 68em;
+    padding-top: 2em;
   }
 
-  [type="submit"] {
+  input[type="submit"] {
     margin-left: calc(100% - 155px);
   }
 
   .contact-form {
     margin-top: 2.7em;
+  }
+
+  .contact-map-caption {
+    text-align: left;
   }
 
   .contact-map-caption a {
