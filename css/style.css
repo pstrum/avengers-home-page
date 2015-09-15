@@ -34,8 +34,6 @@ input {
 
 h1 {
   font-size: 2em;
-  font-weight: lighter;
-  line-height: 1.3;
 }
 
 h2 {
@@ -315,8 +313,13 @@ HEADER & LOGO
   background: #fd6632;
 }
 
+.header-logo-text {
+  font-weight: lighter;
+}
+
 .header-logo-text strong {
   font-weight: normal;
+  line-height: 1.3;
 }
 
 .curve-underline {
@@ -356,8 +359,9 @@ SERVICES COMPONENTS
 }
 
 .services-header {
-    min-width: 225px;
+  min-width: 225px;
   padding: .5em 0;
+  font-size: 2.369em
 }
 
 [data-title="ux-design"]:after {
@@ -1243,5 +1247,6 @@ MEDIA SCREEN MODIFIERS
   .portfolio-section-header,
   .contact-section-header {
     text-decoration: none;
+    text-transform: uppercase;
   }
 }
