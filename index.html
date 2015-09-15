@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
     <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
     <nav class="menu">
@@ -27,28 +27,40 @@
     </header>
     <main>
       <section id="services" class="services-container section-arrows-white">
-        <h1 class="section-header white-color white-line">Services</h1>
+        <div class="section-header-container">
+          <svg height="3" width="50%">
+             <title>Line</title>
+             <desc>White line to denote section header</desc>
+             <line x1="0" y1="0" x2="100%" y2="0" style="stroke:#ffffff;stroke-width:3" />
+          </svg>
+          <h1 class="services-header">Services</h1>
+          <svg height="3" width="50%">
+             <title>Line</title>
+             <desc>White line to denote section header</desc>
+             <line x1="0" y1="0" x2="100%" y2="0" style="stroke:#ffffff;stroke-width:3" />
+          </svg>
+        </div>
         <p class="services-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
         <p class="services-text small-paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         <p class="services-text small-paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         <ul class="services-category-container">
           <li class="services-category">
-            <h2 class="services-header white-color" data-title="ux-design">UI &amp; UX DESIGN</h2>
+            <h2 class="services-header" data-title="ux-design">UI &amp; UX DESIGN</h2>
             <p class="services-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected support by humour.</p>
           </li>
           <li class="services-category">
-            <h2 class="services-header white-color" data-title="laboratory">LABORATORY</h2>
+            <h2 class="services-header" data-title="laboratory">LABORATORY</h2>
             <p class="services-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected support by humour.</p>
           </li>
           <li class="services-category">
-            <h2 class="services-header white-color" data-title="development">DEVELOPMENT</h2>
+            <h2 class="services-header" data-title="development">DEVELOPMENT</h2>
             <p class="services-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected support by humour.</p>
           </li>
         </ul>
         <section class="pricing">
-          <h3 class="sub-section-header white-color white-line">PRICING TABLES</h3>
+          <h1 class="sub-section-header">PRICING TABLES</h1>
           <section class="pricing-tables">
-            <h4 class="pricing-header white-color">BASIC</h4>
+            <h1 class="pricing-header">BASIC</h1>
             <ul>
               <li class="pricing-plan"><span class="pricing-cost">$5.99</span> /MONTH</li>
               <li class="pricing-stats">3 Projects</li>
@@ -61,7 +73,7 @@
             </div>
           </section>
           <section class="pricing-tables">
-            <h4 class="pricing-header white-color">STANDARD</h4>
+            <h1 class="pricing-header">STANDARD</h1>
             <ul>
               <li class="pricing-plan"><span class="pricing-cost">$10.99</span> /MONTH</li>
               <li class="pricing-stats">7 Projects</li>
@@ -74,7 +86,7 @@
             </div>
           </section>
           <section class="pricing-tables">
-            <h4 class="pricing-header white-color">PROFESSIONAL</h4>
+            <h1 class="pricing-header">PROFESSIONAL</h1>
             <ul>
               <li class="pricing-plan"><span class="pricing-cost">$25.99</span> /MONTH</li>
               <li class="pricing-stats">15 Projects</li>
@@ -87,7 +99,7 @@
             </div>
           </section>
           <section class="pricing-tables">
-            <h4 class="pricing-header white-color">PREMIUM</h4>
+            <h1 class="pricing-header">PREMIUM</h1>
             <ul>
               <li class="pricing-plan"><span class="pricing-cost">$49.99</span> /MONTH</li>
               <li class="pricing-stats">UNLIMITED Projects</li>
@@ -102,12 +114,24 @@
         </section>
       </section>
       <article id="portfolio" class="portfolio-container section-arrows-orange">
-        <h2 class="portfolio-section-header gray-line">PORTFOLIO</h2>
+        <div class="section-header-container">
+          <svg height="3" width="50%">
+             <title>Line</title>
+             <desc>Grey line to denote section header</desc>
+             <line x1="0" y1="0" x2="100%" y2="0" style="stroke:#b9bdbf;stroke-width:3" />
+          </svg>
+          <h1 class="portfolio-header">Portfolio</h1>
+          <svg height="3" width="50%">
+             <title>Line</title>
+             <desc>Grey line to denote section header</desc>
+             <line x1="0" y1="0" x2="100%" y2="0" style="stroke:#b9bdbf;stroke-width:3" />
+          </svg>
+        </div>
         <div class="portfolio-slider">
           <figure class="portfolio-slider-figure">
             <img class="portfolio-slider-overlay" src="/img/slider.jpg" width="940" height="336" alt="image advertising Crispers iphone app" title="Crispers/Clouders app">
             <figcaption class="portfolio-slider-caption">
-              <h3 class="white-color">Crispers</h3>
+              <h3>Crispers</h3>
               <p>Nice, crispy and creative landing page</p>
               <a href="http://google.com"><button class="portfolio-slider-button">GET THE APP</button></a>
               <p>Available for iPhone and iPad</p>
@@ -206,45 +230,69 @@
 
       </article>
       <article id="about" class="about section-arrows-white">
-        <h2 class="about-header white-line">ABOUT</h2>
+        <div class="section-header-container">
+          <svg height="3" width="50%">
+             <title>Line</title>
+             <desc>Grey line to denote section header</desc>
+             <line x1="0" y1="0" x2="100%" y2="0" style="stroke:#b9bdbf;stroke-width:3" />
+          </svg>
+          <h1 class="about-header">About</h1>
+          <svg height="3" width="50%">
+             <title>Line</title>
+             <desc>Grey line to denote section header</desc>
+             <line x1="0" y1="0" x2="100%" y2="0" style="stroke:#b9bdbf;stroke-width:3" />
+          </svg>
+        </div>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         <section>
-          <h3 class="skills-header white-line">SKILLS</h3>
+          <h1 class="skills-sub-header">SKILLS</h1>
           <ul class="skills">
             <li>
-              <h4 class="progress-header">PHOTOSHOP</h4>
+              <h2 class="progress-header">PHOTOSHOP</h2>
               <progress value="77" max="100"></progress>
             </li>
-            <li >
-              <h4 class="progress-header">HTML/CSS</h4>
+            <li>
+              <h2 class="progress-header">HTML/CSS</h2>
               <progress value="91" max="100"></progress>
             </li>
             <li>
-              <h4 class="progress-header">ILLUSTRATOR</h4>
+              <h2 class="progress-header">ILLUSTRATOR</h2>
               <progress value="69" max="100"></progress>
             </li>
             <li>
-              <h4 class="progress-header">PHP</h4>
+              <h2 class="progress-header">PHP</h2>
               <progress value="55" max="100"></progress>
             </li>
             <li>
-              <h4 class="progress-header">WORDPRESS</h4>
+              <h2 class="progress-header">WORDPRESS</h2>
               <progress value="97.5" max="100"></progress>
             </li>
           </ul>
         </section>
         <aside>
-          <h3 class="join-us-header">Do you want to be one of Avengers? Join us!</h3>
+          <h1 class="join-us-header">Do you want to be one of Avengers? Join us!</h1>
           <button class="contact-us-button">CONTACT US</button>
         </aside>
       </article>
       <article id="team" class="team section-arrows-black">
-        <h2 class="team-section-header gray-line">TEAM</h2>
+        <div class="section-header-container">
+          <svg height="3" width="50%">
+             <title>Line</title>
+             <desc>Grey line to denote section header</desc>
+             <line x1="0" y1="0" x2="100%" y2="0" style="stroke:#b9bdbf;stroke-width:3" />
+          </svg>
+          <h1 class="team-header">Team</h1>
+          <svg height="3" width="50%">
+             <title>Line</title>
+             <desc>Grey line to denote section header</desc>
+             <line x1="0" y1="0" x2="100%" y2="0" style="stroke:#b9bdbf;stroke-width:3" />
+          </svg>
+        </div>
         <p class="team-text team-description-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
         <section class="team-profile">
-          <h3 class="team-header profile-header">JONATHAN DOE</h3>
-          <h4 class="team-text profile-text">CEO, UI&amp;UX designer</h4>
+          <h1 class="profile-header">JONATHAN DOE</h1>
+          <h2 class="team-text profile-text">CEO, UI&amp;UX designer</h2>
           <figure>
             <img src="/img/jonathan.jpg" alt="Picture of Jonathan Doe" title="Jonathan Doe" class="profile-image circle">
             <figcaption>
@@ -258,8 +306,8 @@
           </figure>
         </section>
         <section class="team-profile">
-          <h3 class="team-header profile-header">JANNETE DOE</h3>
-          <h4 class="team-text profile-text">Business &amp; marketing</h4>
+          <h1 class="profile-header">JANNETE DOE</h1>
+          <h2 class="team-text profile-text">Business &amp; marketing</h2>
           <figure>
             <img src="/img/jannete.jpg" alt="Picture of Jannete Doe" title="Jannete Doe" class="profile-image circle">
             <figcaption>
@@ -273,8 +321,8 @@
           </figure>
         </section>
         <section class="team-profile">
-          <h3 class="team-header profile-header">JANE ELLA DOE</h3>
-          <h4 class="team-text profile-text">UX specialist</h4>
+          <h1 class="profile-header">JANE ELLA DOE</h1>
+          <h2 class="team-text profile-text">UX specialist</h2>
           <figure>
             <img src="/img/jane.jpg" alt="Picture of Jane Ella Doe" title="Jane Ella Doe" class="profile-image circle">
             <figcaption>
@@ -288,8 +336,8 @@
           </figure>
         </section>
         <section class="team-profile">
-          <h3 class="team-header profile-header">JESSIE DOE</h3>
-          <h4 class="team-text profile-text">Business and legacy</h4>
+          <h1 class="profile-header">JESSIE DOE</h1>
+          <h2 class="team-text profile-text">Business and legacy</h2>
           <figure>
             <img src="/img/jessie.jpg" alt="Picture of Jessie Doe" title="Jessie Doe" class="profile-image circle">
             <figcaption>
@@ -303,14 +351,14 @@
           </figure>
         </section>
         <section class="clients">
-          <h3 class="client-section-header gray-line">CLIENTS</h3>
+          <h1 class="client-sub-header">CLIENTS</h1>
           <button class="icon-chevron-left client-button circle"></button>
           <ul>
             <li>
               <figure class="client-figure">
                 <img src="/img/broderic.jpg" alt="Image of Matthew Broderic" title="Matthew Broderic" class="client-image circle">
                 <figcaption class="client-caption">
-                  <h4 class="team-header client-header"><span class="client-name">Matthew Broderic</span> (CEO Hopicola Inc.)</h4>
+                  <h2 class="team-header client-header"><span class="client-name">Matthew Broderic</span> (CEO Hopicola Inc.)</h2>
                   <p class="team-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard my text ever since the 1500s, when lorem upsum is the best text for you.</p>
                 </figcaption>
               </figure>
@@ -320,7 +368,19 @@
         </section>
       </article>
       <article id="contact" class="contact-section section-arrows-white">
-        <h2 class="contact-section-header section-header white-color white-line">CONTACT</h2>
+        <div class="section-header-container">
+          <svg height="3" width="50%">
+             <title>Line</title>
+             <desc>White line to denote section header</desc>
+             <line x1="0" y1="0" x2="100%" y2="0" style="stroke:#ffffff;stroke-width:3" />
+          </svg>
+          <h1 class="contact-header">Contact</h1>
+          <svg height="3" width="50%">
+             <title>Line</title>
+             <desc>White line to denote section header</desc>
+             <line x1="0" y1="0" x2="100%" y2="0" style="stroke:#ffffff;stroke-width:3" />
+          </svg>
+        </div>
         <p class="contact-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
         <form class="contact-form">
           <input type="text" name="company-name" placeholder="Company name">
