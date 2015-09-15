@@ -236,14 +236,13 @@ SECTION HEADERS
 
   .section-arrows-white:before,
   .section-arrows-orange:before,
-  .section-arrows-black:before {
-    position: absolute;
+  .section-arrows-black:before,
+  .section-arrows-clear:before {
     content: "";
     display: block;
-    width: 20%;
+    width: 200px;
     height: 43px;
-    top: 0;
-    left: 40%;
+    margin: 0 auto 2em;
   }
 
   .section-arrows-orange:before {
@@ -256,6 +255,10 @@ SECTION HEADERS
 
   .section-arrows-white:before {
     background: url("/img/triangle-white.svg") no-repeat;
+  }
+
+  .section-arrows-clear:before {
+    background: url("/img/triangle-clear.svg") no-repeat;
   }
 }
 
@@ -335,6 +338,7 @@ SERVICES COMPONENTS
 */
 
 .services-container {
+  position: relative;
   padding: 2.5em .5em 1em;
   text-align: center;
   background-color: #fd6632;
@@ -531,7 +535,7 @@ PORTFOLIO SECTION
     align-items: center;
     -webkit-justify-content: space-around;
     justify-content: space-around;
-    padding-top: 2em;
+    padding-top: 0;
   }
 }
 
@@ -741,6 +745,7 @@ ABOUT
 }
 
 .about {
+  position: relative;
   background-color: #252629;
   padding: 4em 1em 1em;
 }
@@ -850,6 +855,7 @@ TEAM
 }
 
 .team {
+  position: relative;
   -webkit-justify-content: space-around;
   justify-content: space-around;
   padding-top: 2.5em;
@@ -1135,17 +1141,6 @@ input[type="submit"]  {
 
 @media screen and (min-width: 50em) {
 
-  .section-arrows-white:before {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 200px;
-    height: 43px;
-    top: 0;
-    left: 40%;
-    background: url("/img/triangle-white.svg") no-repeat;
-  }
-
   input, textarea, .contact-map-caption {
     font-size: .8em;
   }
@@ -1228,8 +1223,12 @@ MEDIA SCREEN MODIFIERS
 */
 
 @media screen and (min-width: 50em) {
-  .services-container, .team, .about, footer, .header-content, .contact-section {
-    padding: 6em calc(20% - 7.5em);
+  .services-container,
+  .team,
+  .about,
+  .header-content,
+  .contact-section {
+    padding: 0 calc(20% - 7.5em) 6em;
   }
 
   .small-paragraph {
