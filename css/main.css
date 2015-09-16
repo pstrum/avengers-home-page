@@ -20,6 +20,13 @@ textarea {
 a {
   text-decoration: none; }
 
+@font-face {
+  font-family: 'ico-fonts';
+  src: url("/css/fonts/ico-fonts.eot?ghgy45");
+  src: url("/css/fonts/ico-fonts.eot?#iefixghgy45") format("embedded-opentype"), url("/css/fonts/ico-fonts.ttf?ghgy45") format("truetype"), url("/css/fonts/ico-fonts.woff?ghgy45") format("woff"), url("/css/fonts/ico-fonts.svg?ghgy45#ico-fonts") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 .icon-gear:before, .icon-envelope:before, .icon-lab:before, .icon-arrow:before, .icon-google:before, .icon-facebook:before, .icon-twitter:before, .icon-dribble:before, .icon-linkedin:before, .icon-menu:before, .icon-drop:before, .icon-plus:before, .icon-chevron-left:before, .icon-chevron-right:before, .icon-brush:before, .icon-phone:before, .icon-pin:before {
   font-family: 'ico-fonts';
   font-weight: normal;
@@ -77,12 +84,6 @@ a {
 
 .icon-pin:before {
   content: "e؍"; }
-
-@font-face {
-  font-family: "ico-fonts";
-  font-style: normal;
-  font-weight: normal;
-  src: url("/css/fonts/ico-fonts.eot?#iefix") format("embedded-opentype"), url("/css/fonts/ico-fonts.woff2") format("woff2"), url("/css/fonts/ico-fonts.woff") format("woff"), url("/css/fonts/ico-fonts.ttf") format("truetype"), url("/css/fonts/ico-fonts.svg#ico-fonts") format("svg"); }
 
 .bundle {
   min-width: 220px;
