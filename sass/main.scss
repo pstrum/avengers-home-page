@@ -6,7 +6,7 @@
 
 
 body {
-  background-color: #fff;
+  background-color: $background;
   margin: 0 auto;
   text-align: center;
 }
@@ -169,7 +169,7 @@ SECTION HEADERS
 
 .primary-header-light {
   @extend %primary-header;
-  color: $canvas;
+  color: $background;
 }
 
 .primary-header-dark {
