@@ -1,0 +1,36 @@
+$icons: (
+  gear: '\e601',
+  envelope: '\e602',
+  lab: '\e600',
+  arrow: '\e610',
+  google: '\e603',
+  facebook: '\e604',
+  twitter: '\e605',
+  dribble: '\e606',
+  linkedin: '\e607',
+  menu: '\e60f',
+  drop: '\e60e',
+  plus: '\e608',
+  chevron-left: '\e609',
+  chevron-right: '\e60a',
+  brush: '\e60b',
+  phone: '\e60c',
+  pin: 'e\60d'
+);
+
+%icon-fonts {
+  font-family: 'ico-fonts';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+@each $icon in $icons {
+  .icon-#{nth($icon, 1)}:before {
+    content: nth($icon, 2);
+    @extend %icon-fonts;
+  }
+}
+
+@include font-face('ico-fonts', '/css/fonts/ico-fonts');

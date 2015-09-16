@@ -3,6 +3,8 @@
 @import "../node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/bourbon";
 @import "color/color";
 @import "typography";
+@import "lib/utils/icons";
+@import "components/bundle";
 
 
 body {
@@ -69,93 +71,6 @@ MODIFIERS
 }
 
 /*
-ICON FONTS
-*/
-
-@font-face {
-  font-family: 'ico-fonts';
-  src:url('/css/fonts/ico-fonts.eot?ghgy45');
-  src:url('/css/fonts/ico-fonts.eot?#iefixghgy45') format('embedded-opentype'),
-    url('/css/fonts/ico-fonts.ttf?ghgy45') format('truetype'),
-    url('/css/fonts/ico-fonts.woff?ghgy45') format('woff'),
-    url('/css/fonts/ico-fonts.svg?ghgy45#ico-fonts') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-[class^="icon-"], [class*=" icon-"] {
-  font-family: 'ico-fonts';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-[class^="icon-"]:link, [class*=" icon-"]:link,
-[class^="icon-"]:visited, [class*=" icon-"]:visited {
-  color: #fff;
-}
-
-.icon-gear:before {
-  content: "\e601";
-}
-.icon-envelope:before {
-  content: "\e602";
-}
-.icon-lab:before {
-  content: "\e600";
-}
-.icon-arrow-down:before {
-  content: "\e610";
-}
-.icon-google-plus:before {
-  content: "\e603";
-}
-.icon-facebook:before {
-  content: "\e604";
-}
-.icon-twitter:before {
-  content: "\e605";
-}
-.icon-dribbble:before {
-  content: "\e606";
-}
-.icon-linkedin2:before {
-  content: "\e607";
-}
-.icon-menu:before {
-  content: "\e60f";
-}
-.icon-drop:before {
-  content: "\e60e";
-}
-.icon-plus:before {
-  content: "\e608";
-}
-.icon-chevron-left:before {
-  content: "\e609";
-}
-.icon-chevron-right:before {
-  content: "\e60a";
-}
-.icon-brush:before {
-  content: "\e60b";
-}
-.icon-phone:before {
-  content: "\e60c";
-}
-.icon-pin:before {
-  content: "\e60d";
-}
-
-
-/*
 SECTION HEADERS
 */
 
@@ -169,12 +84,12 @@ SECTION HEADERS
 
 .primary-header-light {
   @extend %primary-header;
-  color: $background;
+  color: $primary_font_color;
 }
 
 .primary-header-dark {
   @extend %primary-header;
-  color: $secondary_accent;
+  color: $secondary_font_color;
 }
 
 // .services-header {
@@ -184,7 +99,7 @@ SECTION HEADERS
 
 // .portfolio-header {
 //   @extend %section-header;
-//   color: $secondary_accent;
+//   color: $secondary_font_color;
 // }
 
 // .about-header {
@@ -194,7 +109,7 @@ SECTION HEADERS
 
 // .team-header {
 //   @extend %section-header;
-//   color: $secondary_accent;
+//   color: $secondary_font_color;
 // }
 
 // .contact-header {
@@ -405,7 +320,7 @@ SERVICES COMPONENTS
   font-family: 'ico-fonts';
   font-size: 2em;
   // text-align: center;
-  color: $secondary_accent;
+  color: $secondary_font_color;
   background-color: #fff;
   border-radius: 50%;
 }
@@ -427,67 +342,9 @@ SERVICES COMPONENTS
   }
 }
 
-
-
 /*
-PRICING COMPONENTS
+BUNDLE SECTION DISPLAY FLEX
 */
-
-[class^="pricing"] {
-  // text-align: center;
-}
-
-.pricing-tables {
-  width: 90%;
-  min-width: 220px;
-  margin: 1em auto;
-}
-
-.pricing-header {
-  padding: .5em .2em;
-  font-size: 1.5em;
-  font-weight: lighter;
-  letter-spacing: .1em;
-  background-color: #7e3319;
-}
-
-li[class^="pricing"] {
-  padding: 1em;
-  background-color: #fff;
-  border-top: 1px solid #fd6632;
-}
-
-.pricing-plan {
-  color: #fd6632;
-}
-
-.pricing-cost {
-  font-size: 1.333em;
-  font-weight: bold;
-}
-
-.pricing-stats {
-  color: $secondary_accent;
-}
-
-.pricing-button-container {
-  padding: 1.2em;
-  background-color: #be4c25;
-}
-
-.pricing-button {
-  width: 90%;
-  // margin: 0 auto;
-  padding: .85em 1.35em;
-  background-color: #fd6632;
-}
-
-@media screen and (min-width: 32em) {
-  .pricing-tables {
-    display: inline-block;
-    width: 45%;
-  }
-}
 
 @media screen and (min-width: 50em) {
   .pricing {
@@ -500,17 +357,7 @@ li[class^="pricing"] {
     -webkit-align-content: center;
     align-content: center;
   }
-
-  .pricing-tables {
-    width: 24%;
-  }
-
-  .pricing-button {
-    width: auto;
-  }
 }
-
-
 
 /*
 PORTFOLIO SECTION
@@ -589,7 +436,7 @@ PORTFOLIO SLIDER
   width: 14em;
   line-height: 1.1;
   text-align: left;
-  text-shadow: 1px 1px 5px $secondary_accent;
+  text-shadow: 1px 1px 5px $theme_2_darkest;
 }
 
 .portfolio-slider-caption p {
@@ -911,7 +758,7 @@ TEAM
 }
 
 .profile-header {
-  color: $secondary_accent;
+  color: $secondary_font_color;
   font-size: 1.5em;
 }
 
@@ -972,7 +819,8 @@ TEAM
 }
 
 .client-header {
-  color: $secondary_accent;
+  color: $secondary_font_color
+;
   margin: 0.7em 0;
 }
 
