@@ -1,7 +1,8 @@
 body,
 button,
 input,
-textarea {
+textarea,
+a {
   font-family: $primary_font_family;
   font-size: em($font_size);
   color: $primary_font_color;
