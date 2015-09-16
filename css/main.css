@@ -13,15 +13,6 @@ textarea {
   font-size: 1em;
   color: #ffffff; }
 
-h1 {
-  font-size: 2.125em; }
-
-h2 {
-  font-size: 1.375em; }
-
-h3 {
-  font-size: 1.25em; }
-
 input,
 textarea {
   font-weight: bold; }
@@ -34,6 +25,12 @@ body {
   background-color: #fff;
   margin: 0 auto;
   text-align: center; }
+
+header, article {
+  padding: 2em 1em; }
+  @media screen and (min-width: 50em) {
+    header, article {
+      padding: 0 calc(20% - 7.5em) 6em; } }
 
 button {
   background-color: #fd6632;
@@ -69,9 +66,6 @@ progress[value] {
 /*
 MODIFIERS
 */
-.white-color {
-  color: #fff; }
-
 .circle {
   border-radius: 100%; }
 
@@ -154,28 +148,20 @@ ICON FONTS
 /*
 SECTION HEADERS
 */
-.services-header, .portfolio-header, .about-header, .team-header, .contact-header {
+.primary-header-light, .primary-header-dark {
   display: inline-block;
-  margin: 1em 0.3em;
-  font-size: 2.2em;
+  margin: 1.1em 0.3em;
+  font-size: 2.125em;
+  font-weight: bold;
   text-transform: uppercase; }
 
-.services-header {
+.primary-header-light {
   color: #ffffff; }
 
-.portfolio-header {
+.primary-header-dark {
   color: #2e2e2e; }
 
-.about-header {
-  color: #ffffff; }
-
-.team-header {
-  color: #2e2e2e; }
-
-.contact-header {
-  color: #ffffff; }
-
-.section-header-container {
+.header-container {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -236,7 +222,6 @@ MENU
 HEADER & LOGO
 */
 .header-content {
-  padding: 3em 0;
   background-size: cover;
   background-image: url(/img/header-background.jpg); }
 
@@ -267,8 +252,6 @@ SERVICES COMPONENTS
 */
 .services-container {
   position: relative;
-  padding: 2.5em 0.5em 1em;
-  text-align: center;
   background-color: #fd6632; }
 
 .services-text,
@@ -297,7 +280,6 @@ SERVICES COMPONENTS
   padding-bottom: .5em;
   font-family: 'ico-fonts';
   font-size: 2em;
-  text-align: center;
   color: #2e2e2e;
   background-color: #fff;
   border-radius: 50%; }
@@ -318,9 +300,6 @@ SERVICES COMPONENTS
 /*
 PRICING COMPONENTS
 */
-[class^="pricing"] {
-  text-align: center; }
-
 .pricing-tables {
   width: 90%;
   min-width: 220px;
@@ -354,7 +333,6 @@ li[class^="pricing"] {
 
 .pricing-button {
   width: 90%;
-  margin: 0 auto;
   padding: 0.85em 1.35em;
   background-color: #fd6632; }
 
@@ -387,10 +365,7 @@ PORTFOLIO SECTION
   -webkit-flex-direction: column;
   flex-direction: column;
   -webkit-align-items: center;
-  align-items: center;
-  max-width: 68em;
-  padding: 3.5em 0 0;
-  margin: 0 auto; }
+  align-items: center; }
 
 @media screen and (min-width: 50em) {
   .portfolio-container {
@@ -402,8 +377,7 @@ PORTFOLIO SECTION
     -webkit-align-items: center;
     align-items: center;
     -webkit-justify-content: space-around;
-    justify-content: space-around;
-    padding-top: 0; } }
+    justify-content: space-around; } }
 
 /*
 PORTFOLIO SLIDER
@@ -467,8 +441,7 @@ PORTFOLIO SLIDER
     visibility: visible; }
   .portfolio-slider-bullets {
     padding: .3em;
-    font-size: 1.777em;
-    text-align: center; }
+    font-size: 1.777em; }
   .portfolio-slider-bullets li {
     display: inline; }
   [title$="bullet"]:before {
@@ -483,8 +456,7 @@ PORTFOLIO NAVIGATION
 [title="portfolio-categories"] li {
   display: block;
   margin-top: .9em;
-  margin-bottom: .5em;
-  text-align: center; }
+  margin-bottom: .5em; }
 
 .portfolio-menu-item {
   padding: .3em;
@@ -518,8 +490,7 @@ PORTFOLIO ITEMS
   position: relative;
   max-width: 300px;
   margin-top: .5em;
-  margin-bottom: 2em;
-  text-align: center; }
+  margin-bottom: 2em; }
 
 .portfolio-opacity {
   opacity: .7; }
@@ -538,7 +509,6 @@ PORTFOLIO ITEMS
   content: "\e608";
   font-family: 'ico-fonts';
   font-size: 1.6em;
-  text-align: center;
   color: #fff;
   background-color: #fd6632;
   border-radius: 50%; }
@@ -559,8 +529,7 @@ ABOUT
 
 .about {
   position: relative;
-  background-color: #252629;
-  padding: 4em 1em 1em; }
+  background-color: #252629; }
 
 .about p {
   display: inline-block;
@@ -627,8 +596,7 @@ TEAM
 .team {
   position: relative;
   -webkit-justify-content: space-around;
-  justify-content: space-around;
-  padding-top: 2.5em; }
+  justify-content: space-around; }
 
 .team-profile, .social-icons {
   display: inline-block; }
@@ -747,8 +715,6 @@ CONTACT SECTION
   flex-direction: column;
   -webkit-align-items: center;
   align-items: center;
-  margin: 0 auto;
-  padding: 2.5em 0.3em 2em;
   background-color: #fd6632; }
 
 .contact-text {
@@ -799,7 +765,6 @@ input[type="submit"] {
   padding-top: .5em;
   padding-bottom: .5em;
   line-height: 1.4em;
-  text-align: center;
   background-color: rgba(0, 0, 0, 0.7); }
 
 .contact-phone:before,
@@ -839,8 +804,7 @@ input[type="submit"] {
     -webkit-align-items: center;
     align-items: center;
     -webkit-justify-content: space-around;
-    justify-content: space-around;
-    padding-top: 2em; }
+    justify-content: space-around; }
   input[type="submit"] {
     margin-left: calc(100% - 155px); }
   .contact-form {
@@ -883,12 +847,5 @@ footer p {
 MEDIA SCREEN MODIFIERS
 */
 @media screen and (min-width: 50em) {
-  .services-container,
-  .portfolio-container,
-  .team,
-  .about,
-  .header-content,
-  .contact-section {
-    padding: 0 calc(20% - 7.5em) 6em; }
   .small-paragraph {
     width: 45%; } }
