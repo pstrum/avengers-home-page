@@ -1,63 +1,19 @@
+@import "config";
+@import "reset";
+@import "../node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/bourbon";
 @import "color/color";
+@import "typography";
 
-$font-color: $secondary_accent;
-
-/*
-BASE STYLES
-*/
-
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body,
-button,
-input,
-textarea {
-  font-family: "helvetica neue", arial, sans-serif;
-  font-size: 16px;
-}
 
 body {
-  color: $secondary_accent;
   background-color: #fff;
   margin: 0 auto;
   text-align: center;
 }
 
-p,
-button,
-textarea,
-input {
-  color: #fff;
-}
-
-
-h2 {
-  font-size: 2.369em;
-  font-weight: bold;
-}
-
-h3 {
-  font-size: 1.777em;
-  font-weight: bold;
-}
-
-h4 {
-  font-size: 0.9em;
-}
-
 button {
   background-color: #fd6632;
   border: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 button:active, a:active {
@@ -78,7 +34,6 @@ img {
 input,
 textarea {
   display: block;
-  font-weight: bold;
   background-color: #be4c25;
   border: none;
 }

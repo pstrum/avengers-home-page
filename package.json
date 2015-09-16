@@ -18,6 +18,7 @@
   "homepage": "https://github.com/hollislau/advanced-presentation__W2-A2#readme",
   "devDependencies": {
     "gulp": "^3.9.0",
-    "gulp-sass": "^2.0.4"
+    "gulp-sass": "^2.0.4",
+    "node-bourbon": "^4.2.3"
   }
 }

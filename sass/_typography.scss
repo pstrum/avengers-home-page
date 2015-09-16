@@ -1,0 +1,31 @@
+
+body,
+button,
+input,
+textarea {
+  font-family: $primary_font_family;
+  font-size: em($font_size);
+  color: $primary_font_color;
+}
+
+h1 {
+  font-size: em($heading_1);
+}
+
+h2 {
+  font-size: em($heading_2);
+}
+
+h3 {
+  font-size: em($heading_3);
+}
+
+input,
+textarea {
+  font-weight: bold;
+}
+
+a {
+  color: $grey;
+  text-decoration: none;
+}
