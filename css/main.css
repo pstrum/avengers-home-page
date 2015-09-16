@@ -163,7 +163,7 @@ SECTION HEADERS
 */
 .services-header, .portfolio-header, .about-header, .team-header, .contact-header {
   display: inline-block;
-  margin: 0 0.3em;
+  margin: 1em 0.3em;
   font-size: 2.2em;
   text-transform: uppercase; }
 
@@ -281,7 +281,6 @@ SERVICES COMPONENTS
 .services-text,
 .contact-text {
   display: inline-block;
-  padding: .5em 0;
   line-height: 1.4; }
 
 .services-category {
@@ -320,9 +319,6 @@ SERVICES COMPONENTS
     justify-content: space-around;
     -webkit-align-content: center;
     align-content: center; }
-  .services-text,
-  .contact-text {
-    padding: 1em; }
   .services-category {
     width: 33%; } }
 

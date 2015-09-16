@@ -1,14 +1,6 @@
-$white: #ffffff !default;
-$orange: #fd6632 !default;
-$burntorange: #be4c25 !default;
-$firebrick: #7e3319 !default;
-$darkgrey: #2e2e2e !default;
-$grey: #7c8387 !default;
-$lightgrey: #d4d4d4 !default;
-$slategrey: #b9bdbf !default;
+@import "color/color";
 
-$font-color: $darkgrey;
-
+$font-color: $secondary_accent;
 
 /*
 BASE STYLES
@@ -31,7 +23,7 @@ textarea {
 }
 
 body {
-  color: $darkgrey;
+  color: $secondary_accent;
   background-color: #fff;
   margin: 0 auto;
   text-align: center;
@@ -207,34 +199,34 @@ SECTION HEADERS
 
 %section-header {
   display: inline-block;
-  margin: 0 .3em;
+  margin: 1em .3em;
   font-size: 2.2em;
   text-transform: uppercase;
 }
 
 .services-header {
   @extend %section-header;
-  color: $white;
+  color: $canvas;
 }
 
 .portfolio-header {
   @extend %section-header;
-  color: $darkgrey;
+  color: $secondary_accent;
 }
 
 .about-header {
   @extend %section-header;
-  color: $white;
+  color: $canvas;
 }
 
 .team-header {
   @extend %section-header;
-  color: $darkgrey;
+  color: $secondary_accent;
 }
 
 .contact-header {
   @extend %section-header;
-  color: $white;
+  color: $canvas;
 }
 
 .section-header-container {
@@ -405,7 +397,6 @@ SERVICES COMPONENTS
 .services-text,
 .contact-text {
   display: inline-block;
-  padding: .5em 0;
   line-height: 1.4;
 }
 
@@ -441,7 +432,7 @@ SERVICES COMPONENTS
   font-family: 'ico-fonts';
   font-size: 2em;
   text-align: center;
-  color: $darkgrey;
+  color: $secondary_accent;
   background-color: #fff;
   border-radius: 50%;
 }
@@ -456,11 +447,6 @@ SERVICES COMPONENTS
     justify-content: space-around;
     -webkit-align-content: center;
     align-content: center;
-  }
-
-  .services-text,
-  .contact-text {
-    padding: 1em;
   }
 
   .services-category {
@@ -508,7 +494,7 @@ li[class^="pricing"] {
 }
 
 .pricing-stats {
-  color: $darkgrey;
+  color: $secondary_accent;
 }
 
 .pricing-button-container {
@@ -630,7 +616,7 @@ PORTFOLIO SLIDER
   width: 14em;
   line-height: 1.1;
   text-align: left;
-  text-shadow: 1px 1px 5px $darkgrey;
+  text-shadow: 1px 1px 5px $secondary_accent;
 }
 
 .portfolio-slider-caption p {
@@ -952,7 +938,7 @@ TEAM
 }
 
 .profile-header {
-  color: $darkgrey;
+  color: $secondary_accent;
   font-size: 1.5em;
 }
 
@@ -1013,7 +999,7 @@ TEAM
 }
 
 .client-header {
-  color: $darkgrey;
+  color: $secondary_accent;
   margin: 0.7em 0;
 }
 
