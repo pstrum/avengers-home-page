@@ -79,12 +79,6 @@ a {
 .icon-pin:before {
   content: "e؍"; }
 
-@font-face {
-  font-family: "ico-fonts";
-  font-style: normal;
-  font-weight: normal;
-  src: url("/css/fonts/ico-fonts.eot?#iefix") format("embedded-opentype"), url("/css/fonts/ico-fonts.woff2") format("woff2"), url("/css/fonts/ico-fonts.woff") format("woff"), url("/css/fonts/ico-fonts.ttf") format("truetype"), url("/css/fonts/ico-fonts.svg#ico-fonts") format("svg"); }
-
 .bundle {
   min-width: 220px;
   margin-bottom: 1em; }
