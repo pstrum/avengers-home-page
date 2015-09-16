@@ -30,6 +30,114 @@ a {
   color: #7c8387;
   text-decoration: none; }
 
+.icon-gear:before, .icon-envelope:before, .icon-lab:before, .icon-arrow:before, .icon-google:before, .icon-facebook:before, .icon-twitter:before, .icon-dribble:before, .icon-linkedin:before, .icon-menu:before, .icon-drop:before, .icon-plus:before, .icon-chevron-left:before, .icon-chevron-right:before, .icon-brush:before, .icon-phone:before, .icon-pin:before {
+  font-family: 'ico-fonts';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit; }
+
+.icon-gear:before {
+  content: ""; }
+
+.icon-envelope:before {
+  content: ""; }
+
+.icon-lab:before {
+  content: ""; }
+
+.icon-arrow:before {
+  content: ""; }
+
+.icon-google:before {
+  content: ""; }
+
+.icon-facebook:before {
+  content: ""; }
+
+.icon-twitter:before {
+  content: ""; }
+
+.icon-dribble:before {
+  content: ""; }
+
+.icon-linkedin:before {
+  content: ""; }
+
+.icon-menu:before {
+  content: ""; }
+
+.icon-drop:before {
+  content: ""; }
+
+.icon-plus:before {
+  content: ""; }
+
+.icon-chevron-left:before {
+  content: ""; }
+
+.icon-chevron-right:before {
+  content: ""; }
+
+.icon-brush:before {
+  content: ""; }
+
+.icon-phone:before {
+  content: ""; }
+
+.icon-pin:before {
+  content: "e؍"; }
+
+@font-face {
+  font-family: "ico-fonts";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/css/fonts/ico-fonts.eot?#iefix") format("embedded-opentype"), url("/css/fonts/ico-fonts.woff2") format("woff2"), url("/css/fonts/ico-fonts.woff") format("woff"), url("/css/fonts/ico-fonts.ttf") format("truetype"), url("/css/fonts/ico-fonts.svg#ico-fonts") format("svg"); }
+
+.bundle {
+  min-width: 220px;
+  margin-bottom: 1em; }
+  .bundle h3 {
+    padding: 0.7em 0.2em;
+    font-size: 1.375em;
+    font-weight: lighter;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    background-color: #7e3319; }
+  .bundle li {
+    padding: 1em;
+    color: #2e2e2e;
+    background-color: #ffffff;
+    border-top: 1px solid #fd6632; }
+    .bundle li.bundle-plan {
+      color: #fd6632; }
+  .bundle span {
+    font-size: 1.25em;
+    font-weight: bold; }
+  .bundle .bundle-button-container {
+    padding: 1em;
+    background-color: #be4c25;
+    border-top: 2px solid #fd6632; }
+  .bundle .button {
+    display: block;
+    padding: 0.85em 1.35em;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #fd6632; }
+    .bundle .button:hover {
+      background-color: #de592c; }
+
+@media screen and (min-width: 32em) {
+  .bundle {
+    display: inline-block;
+    width: 45%; } }
+
+@media screen and (min-width: 50em) {
+  .bundle {
+    width: 24%; }
+    .bundle .button {
+      width: auto; } }
+
 body {
   background-color: #fff;
   margin: 0 auto;
@@ -74,82 +182,6 @@ MODIFIERS
 
 .circle {
   border-radius: 100%; }
-
-/*
-ICON FONTS
-*/
-@font-face {
-  font-family: 'ico-fonts';
-  src: url("/css/fonts/ico-fonts.eot?ghgy45");
-  src: url("/css/fonts/ico-fonts.eot?#iefixghgy45") format("embedded-opentype"), url("/css/fonts/ico-fonts.ttf?ghgy45") format("truetype"), url("/css/fonts/ico-fonts.woff?ghgy45") format("woff"), url("/css/fonts/ico-fonts.svg?ghgy45#ico-fonts") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-[class^="icon-"], [class*=" icon-"] {
-  font-family: 'ico-fonts';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-[class^="icon-"]:link, [class*=" icon-"]:link,
-[class^="icon-"]:visited, [class*=" icon-"]:visited {
-  color: #fff; }
-
-.icon-gear:before {
-  content: "\e601"; }
-
-.icon-envelope:before {
-  content: "\e602"; }
-
-.icon-lab:before {
-  content: "\e600"; }
-
-.icon-arrow-down:before {
-  content: "\e610"; }
-
-.icon-google-plus:before {
-  content: "\e603"; }
-
-.icon-facebook:before {
-  content: "\e604"; }
-
-.icon-twitter:before {
-  content: "\e605"; }
-
-.icon-dribbble:before {
-  content: "\e606"; }
-
-.icon-linkedin2:before {
-  content: "\e607"; }
-
-.icon-menu:before {
-  content: "\e60f"; }
-
-.icon-drop:before {
-  content: "\e60e"; }
-
-.icon-plus:before {
-  content: "\e608"; }
-
-.icon-chevron-left:before {
-  content: "\e609"; }
-
-.icon-chevron-right:before {
-  content: "\e60a"; }
-
-.icon-brush:before {
-  content: "\e60b"; }
-
-.icon-phone:before {
-  content: "\e60c"; }
-
-.icon-pin:before {
-  content: "\e60d"; }
 
 /*
 SECTION HEADERS
@@ -316,53 +348,8 @@ SERVICES COMPONENTS
     width: 33%; } }
 
 /*
-PRICING COMPONENTS
+BUNDLE SECTION DISPLAY FLEX
 */
-[class^="pricing"] {
-  text-align: center; }
-
-.pricing-tables {
-  width: 90%;
-  min-width: 220px;
-  margin: 1em auto; }
-
-.pricing-header {
-  padding: 0.5em 0.2em;
-  font-size: 1.5em;
-  font-weight: lighter;
-  letter-spacing: .1em;
-  background-color: #7e3319; }
-
-li[class^="pricing"] {
-  padding: 1em;
-  background-color: #fff;
-  border-top: 1px solid #fd6632; }
-
-.pricing-plan {
-  color: #fd6632; }
-
-.pricing-cost {
-  font-size: 1.333em;
-  font-weight: bold; }
-
-.pricing-stats {
-  color: #2e2e2e; }
-
-.pricing-button-container {
-  padding: 1.2em;
-  background-color: #be4c25; }
-
-.pricing-button {
-  width: 90%;
-  margin: 0 auto;
-  padding: 0.85em 1.35em;
-  background-color: #fd6632; }
-
-@media screen and (min-width: 32em) {
-  .pricing-tables {
-    display: inline-block;
-    width: 45%; } }
-
 @media screen and (min-width: 50em) {
   .pricing {
     display: -webkit-flex;
@@ -372,11 +359,7 @@ li[class^="pricing"] {
     -webkit-justify-content: space-between;
     justify-content: space-between;
     -webkit-align-content: center;
-    align-content: center; }
-  .pricing-tables {
-    width: 24%; }
-  .pricing-button {
-    width: auto; } }
+    align-content: center; } }
 
 /*
 PORTFOLIO SECTION

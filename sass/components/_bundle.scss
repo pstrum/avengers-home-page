@@ -1,0 +1,60 @@
+$cell-padding: 1em;
+
+
+.bundle {
+  min-width: 220px;
+  margin-bottom: 1em;
+  h3 {
+    padding: .7em .2em;
+    font-size: em($heading_2);
+    font-weight: lighter;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    background-color: $firebrick;
+  }
+  li {
+    padding: $cell-padding;
+    color: $secondary_accent;
+    background-color: $canvas;
+    border-top: 1px solid $primary_accent;
+    &.bundle-plan {
+      color: $primary_accent;
+    }
+  }
+  span {
+    font-size: em($heading_3);
+    font-weight: bold;
+  }
+  .bundle-button-container {
+    padding: $cell-padding;
+    background-color: $sunrise;
+    border-top: 2px solid $primary_accent;
+  }
+  .button {
+    display: block;
+    padding: .85em 1.35em;
+    color: $primary_font_color;
+    text-transform: uppercase;
+    background-color: $primary_accent;
+    &:hover {
+      background-color: $href_hover;
+    }
+  }
+}
+
+@media screen and (min-width: 32em) {
+  .bundle {
+    display: inline-block;
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 50em) {
+  .bundle {
+    width: 24%;
+    .button {
+      width: auto;
+    }
+  }
+}
+
