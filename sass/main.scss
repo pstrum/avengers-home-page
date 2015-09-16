@@ -1113,3 +1113,46 @@ MEDIA SCREEN MODIFIERS
   //   text-transform: uppercase;
   // }
 }
+
+%flex-center {
+  @include display(flex);
+  @include align-items(center);
+}
+
+@mixin flex($wrap:null, $direction:null, $justify:null) {
+  @extend %flex-center;
+  @include flex-direction($direction);
+  @include flex-wrap($wrap);
+  @include justify-content($justify);
+}
+
+#portfolio {
+  @include flex($direction: column, $justify: space-around);
+  @media screen and (min-width: 50em) {
+    @include flex($wrap: wrap, $direction: row);
+  }
+}
+
+#team {
+  @include flex($wrap: wrap);
+}
+
+.clients {
+  @include flex($wrap: wrap, $justify: space-between);
+  min-width: 20em;
+  margin-top: 1em;
+}
+
+.client-figure {
+  margin: 1em 0;
+  @media screen and (min-width: 50em) {;
+    @extend %flex-center;
+  }
+}
+
+#contact {
+  @include flex($direction: column);
+  @media screen and (min-width: 50em) {
+    @include flex($wrap: wrap, $direction: row, $justify: space-between);
+  }
+}
