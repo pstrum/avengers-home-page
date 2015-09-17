@@ -1,72 +1,48 @@
+$slider-position: relative;
+$slider-opacity: .7;
+$caption-position: absolute;
+$caption-min-width: 165px;
+$caption-margin-left: 50%;
+$caption-text-align: left;
+$caption-header-size: em($heading_3);
+$caption-font-size: em($font-size);
+
 %text-shadow {
   text-shadow: 1px 1px 5px $theme_2_darkest;
 }
 
-@mixin caption-position($position: relative, $top: null, $right: null, $bottom: null, $left: null) {
-  position: $position;
-  top: $top;
-  right: $right;
-  bottom: $bottom;
-  left: $left;
-}
-
 .slider {
   figure {
-    // display: none;
-    position: relative;
+    display: none;
+    position: $slider-position;
+  }
+  .active-slide {
+    display: block;
   }
   img {
-    opacity: .7;
-  }
-  [aria-hidden="true"] {
-    visibility: hidden;
-    display: none;
+    opacity: $slider-opacity;
   }
   figcaption {
-    @include caption-position(absolute, $top: 10%, $left: 25%);
-    text-align: left;
+    position: $caption-position;
+    top: 10%;
+    min-width: $caption-min-width;
+    margin-left: $caption-margin-left;
+    margin-right: auto;
+    text-align: $caption-text-align;
   }
   h3 {
-    margin-bottom: .5em;
-    font-size: em($heading_2);
-    @extend %text-shadow;
+    margin-bottom: .1em;
+    font-size: $caption-header-size;
   }
   p {
+    font-size: $caption-font-size * .8;
     @extend %text-shadow;
   }
   .download-button {
-    margin: 1em 0;
+    margin: .5em 0;
   }
   .gotcha {
     font-size: em($font-size) / 2;
-  }
-}
-
-/*
-DOWNLOAD BUTTON
-*/
-
-.download-button {
-  display: inline-block;
-  padding: .8em 1em;
-  font-size: em($font_smallest);
-  color: $primary_font_color;
-  @include linear-gradient(#4dbff7, #5087c8);
-  &:hover {
-    @include linear-gradient(#5087c8, #4dbff7);
-  }
-  &:before {
-    content: "\e610";
-    padding-right: 1em;
-    color: rgba(0,0,0,.3);
-  }
-  &:after {
-    content: "\e60a";
-    padding-left: 1.333em;
-  }
-  &:before,
-  &:after {
-  font-family: "ico-fonts";
   }
 }
 
@@ -80,24 +56,25 @@ DOWNLOAD BUTTON
     content: "•";
     color: $theme_2_light;
   }
-  .active:before {
+  .current:before {
     color: #ff4200;
   }
 }
 
-
 @media screen and (min-width: 50em) {
   .slider {
-    img.desktop-slide {
-      display: block;
-      visibility: visible;
-    }
-    img.mobile-slide {
-      display: none;
-      visibility: hidden;
-    }
     figcaption {
-      @include caption-position(absolute, $top:30%, $left: 50%);
+      top: 30%;
+    }
+    h3 {
+      margin-bottom: .3em;
+      font-size: $caption-header-size * 1.3;
+    }
+    p {
+      margin-bottom: .5em;
+      font-size: $caption-font-size * 1.3;
+      line-height: 1.3;
     }
   }
 }
+

@@ -129,42 +129,10 @@ a {
     .bundle .button {
       width: auto; } }
 
-.slider h3, .slider p {
-  text-shadow: 1px 1px 5px #2e2e2e; }
-
-.slider figure {
-  position: relative; }
-
-.slider img {
-  opacity: .7; }
-
-.slider [aria-hidden="true"] {
-  visibility: hidden;
-  display: none; }
-
-.slider figcaption {
-  position: absolute;
-  top: 10%;
-  left: 25%;
-  text-align: left; }
-
-.slider h3 {
-  margin-bottom: .5em;
-  font-size: 1.375em; }
-
-.slider .download-button {
-  margin: 1em 0; }
-
-.slider .gotcha {
-  font-size: 0.5em; }
-
-/*
-DOWNLOAD BUTTON
-*/
 .download-button {
   display: inline-block;
   padding: 0.8em 1em;
-  font-size: 0.8125em;
+  font-size: 0.5em;
   color: #ffffff;
   background-color: #4dbff7;
   background-image: -webkit-linear-gradient(#4dbff7, #5087c8);
@@ -184,6 +152,40 @@ DOWNLOAD BUTTON
   .download-button:after {
     font-family: "ico-fonts"; }
 
+.slider p {
+  text-shadow: 1px 1px 5px #2e2e2e; }
+
+.slider figure {
+  display: none;
+  position: relative; }
+
+.slider .active-slide {
+  display: block; }
+
+.slider img {
+  opacity: 0.7; }
+
+.slider figcaption {
+  position: absolute;
+  top: 10%;
+  min-width: 165px;
+  margin-left: 50%;
+  margin-right: auto;
+  text-align: left; }
+
+.slider h3 {
+  margin-bottom: .1em;
+  font-size: 1.25em; }
+
+.slider p {
+  font-size: 0.8em; }
+
+.slider .download-button {
+  margin: .5em 0; }
+
+.slider .gotcha {
+  font-size: 0.5em; }
+
 .bullets {
   padding: .5em 0; }
   .bullets li {
@@ -192,20 +194,19 @@ DOWNLOAD BUTTON
   .bullets a:before {
     content: "•";
     color: #d4d4d4; }
-  .bullets .active:before {
+  .bullets .current:before {
     color: #ff4200; }
 
 @media screen and (min-width: 50em) {
-  .slider img.desktop-slide {
-    display: block;
-    visibility: visible; }
-  .slider img.mobile-slide {
-    display: none;
-    visibility: hidden; }
   .slider figcaption {
-    position: absolute;
-    top: 30%;
-    left: 50%; } }
+    top: 30%; }
+  .slider h3 {
+    margin-bottom: .3em;
+    font-size: 1.625em; }
+  .slider p {
+    margin-bottom: .5em;
+    font-size: 1.3em;
+    line-height: 1.3; } }
 
 body {
   background-color: #ffffff;

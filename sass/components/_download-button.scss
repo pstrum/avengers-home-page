@@ -1,0 +1,25 @@
+$download-button-size: em($font-size);
+
+.download-button {
+  display: inline-block;
+  padding: .8em 1em;
+  font-size: $download-button-size  * .5;
+  color: $primary_font_color;
+  @include linear-gradient(#4dbff7, #5087c8);
+  &:hover {
+    @include linear-gradient(#5087c8, #4dbff7);
+  }
+  &:before {
+    content: "\e610";
+    padding-right: 1em;
+    color: rgba(0,0,0,.3);
+  }
+  &:after {
+    content: "\e60a";
+    padding-left: 1.333em;
+  }
+  &:before,
+  &:after {
+    font-family: "ico-fonts";
+  }
+}
