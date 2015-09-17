@@ -1,28 +1,27 @@
-body,
-button,
-input,
-textarea,
-a {
+body, button, input, textarea, a {
   font-family: $primary_font_family;
   font-size: em($font_size);
   color: $primary_font_color;
 }
 
-// h1 {
-//   font-size: em($heading_1);
-// }
+h1 {
+  font-size: em($heading_1);
+}
 
-// h2 {
-//   font-size: em($heading_2);
-// }
+h2 {
+  font-size: em($heading_2);
+}
 
-// h3 {
-//   font-size: em($heading_3);
-// }
+h3 {
+  font-size: em($heading_3);
+}
 
-input,
-textarea {
+h1, h2, h3, input, textarea {
   font-weight: bold;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
 }
 
 a {
