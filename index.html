@@ -121,23 +121,33 @@
              <line x1="0" y1="0" x2="100%" y2="0" style="stroke:#b9bdbf;stroke-width:3" />
           </svg>
         </div>
-        <div class="portfolio-slider">
-          <figure class="portfolio-slider-figure">
-            <img class="portfolio-slider-overlay" src="/img/slider.jpg" width="940" height="336" alt="image advertising Crispers iphone app" title="Crispers/Clouders app">
-            <figcaption class="portfolio-slider-caption">
+        <div class="slider">
+          <figure id="first-slide">
+            <img class="mobile-slide" src="/img/slider-mobile.jpg" width="800" height="465" alt="image advertising Crispers iphone app" title="Crispers/Clouders app" aria-hidden="false">
+            <img class="desktop-slide" src="/img/slider.jpg" width="940" height="336" alt="image advertising Crispers iphone app" title="Crispers/Couders app" aria-hidden="true">
+            <figcaption>
               <h3>Crispers</h3>
-              <p>Nice, crispy and creative landing page</p>
-              <a href="http://google.com"><button class="portfolio-slider-button">GET THE APP</button></a>
-              <p>Available for iPhone and iPad</p>
+              <p>Nice, crispy and<br />creative landing page</p>
+              <a href="https://www.google.com/?gws_rd=ssl#q=crispers" class="download-button">GET THE APP</a>
+              <p class="gotcha">Available for iPhone and iPad</p>
             </figcaption>
           </figure>
-          <ul class="portfolio-slider-bullets" title="slider bullets" aria-hidden="true">
-<!-- >>>>>>>>>>> Change "title" to "class", show up on hover >>>>>>> -->
-            <li title="first bullet"></li>
-            <li title="second bullet"></li>
-            <li title="third bullet"></li>
-            <li title="fourth bullet" class="slider-bullet-active"></li>
-            <li title="fifth bullet"></li>
+          <figure id="second-slide">
+            <img class="mobile-slide" src="/img/slider-mobile.jpg" width="800" height="465" alt="image advertising Crispers iphone app" title="Crispers/Clouders app" aria-hidden="false">
+            <img class="desktop-slide" src="/img/slider.jpg" width="940" height="336" alt="image advertising Crispers iphone app" title="Crispers/Couders app" aria-hidden="true">
+            <figcaption>
+              <h3>Crispers</h3>
+              <p>Nice, crispy and<br />creative landing page</p>
+              <a href="https://www.google.com/?gws_rd=ssl#q=crispers" class="download-button">GET THE APP</a>
+              <p class="gotcha">Available for iPhone and iPad</p>
+            </figcaption>
+          </figure>
+          <ul class="bullets">
+            <li><a class="active" href="#first-slide">First Bullet</a></li>
+            <li><a href="#second-slide">Second Bullet</a></li>
+            <li><a href="#third-slide">Third Bullet</a></li>
+            <li><a href="#fourth-slide">Fourth Bullet</a></li>
+            <li><a href="#fifth-slide">Fifth Bullet</a></li>
           </ul>
         </div>
 

@@ -1,0 +1,103 @@
+%text-shadow {
+  text-shadow: 1px 1px 5px $theme_2_darkest;
+}
+
+@mixin caption-position($position: relative, $top: null, $right: null, $bottom: null, $left: null) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+.slider {
+  figure {
+    // display: none;
+    position: relative;
+  }
+  img {
+    opacity: .7;
+  }
+  [aria-hidden="true"] {
+    visibility: hidden;
+    display: none;
+  }
+  figcaption {
+    @include caption-position(absolute, $top: 10%, $left: 25%);
+    text-align: left;
+  }
+  h3 {
+    margin-bottom: .5em;
+    font-size: em($heading_2);
+    @extend %text-shadow;
+  }
+  p {
+    @extend %text-shadow;
+  }
+  .download-button {
+    margin: 1em 0;
+  }
+  .gotcha {
+    font-size: em($font-size) / 2;
+  }
+}
+
+/*
+DOWNLOAD BUTTON
+*/
+
+.download-button {
+  display: inline-block;
+  padding: .8em 1em;
+  font-size: em($font_smallest);
+  color: $primary_font_color;
+  @include linear-gradient(#4dbff7, #5087c8);
+  &:hover {
+    @include linear-gradient(#5087c8, #4dbff7);
+  }
+  &:before {
+    content: "\e610";
+    padding-right: 1em;
+    color: rgba(0,0,0,.3);
+  }
+  &:after {
+    content: "\e60a";
+    padding-left: 1.333em;
+  }
+  &:before,
+  &:after {
+  font-family: "ico-fonts";
+  }
+}
+
+.bullets {
+  padding: .5em 0;
+  li {
+    display: inline;
+    font-size: 1.777em;
+  }
+  a:before {
+    content: "•";
+    color: $theme_2_light;
+  }
+  .active:before {
+    color: #ff4200;
+  }
+}
+
+
+@media screen and (min-width: 50em) {
+  .slider {
+    img.desktop-slide {
+      display: block;
+      visibility: visible;
+    }
+    img.mobile-slide {
+      display: none;
+      visibility: hidden;
+    }
+    figcaption {
+      @include caption-position(absolute, $top:30%, $left: 50%);
+    }
+  }
+}
