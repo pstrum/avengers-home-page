@@ -56,10 +56,12 @@
   color: $secondary_font_color;
   .client-name {
     display: block;
+    margin-bottom: 0.2em;
   }
   @media screen and (min-width: 50em) {
     .client-name {
       display: inline-block;
+      margin-bottom: 0;
     }
   }
 }
