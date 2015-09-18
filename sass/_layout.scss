@@ -1,0 +1,14 @@
+.contact {
+  background-color: $theme_1_light;
+  .contact-text,
+  .contact-form {
+    margin-bottom: 1.5em;
+  }
+  @media screen and (min-width: 50em) {
+    position: relative;
+    .contact-text,
+    .contact-form {
+      margin-bottom: 0;
+    }
+  }
+}

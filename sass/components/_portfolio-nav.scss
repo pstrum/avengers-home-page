@@ -1,0 +1,36 @@
+%nav-active {
+  color: $primary_font_color;
+  background-color: $theme_1_light,;
+}
+
+
+.portfolio-navigation {
+  @include flex-basis($width: 100%);
+  li {
+    display: block;
+    margin-top: .9em;
+    margin-bottom: .5em;
+  }
+  .nav-item {
+    padding: .3em;
+    font-size: em($font_smaller);
+    font-weight: bold;
+    color: $theme_2_light;
+  }
+  .nav-item:hover {
+    @extend %nav-active;
+  }
+  a.portfolio-nav-active {
+    @extend %nav-active;
+  }
+}
+
+@media screen and (min-width: 50em) {
+  .portfolio-navigation {
+    margin-top: 1em;
+    margin-bottom: 1.777em;
+    li {
+      display: inline-block;
+    }
+  }
+}

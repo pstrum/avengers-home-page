@@ -1,0 +1,62 @@
+$map-caption-background: rgba(0,0,0,.7);
+$map-caption-library: 'ico-fonts';
+$map-caption-text-size: em($font_small);
+
+.contact-map {
+  position: relative;
+  img {
+    opacity: 1;
+  }
+  .contact-map-caption {
+    position: absolute;
+    top: 0;
+  }
+}
+
+.contact-map-caption {
+  padding-top: .5em;
+  line-height: 1.4em;
+  background-color: $map-caption-background;
+  & a {
+    display: inline-block;
+    padding: .3em;
+    color: #fff;
+    text-decoration: none;
+    span {
+      font-weight: lighter;
+    }
+  }
+  .contact-phone:before,
+  .contact-email:before,
+  .contact-location:before {
+    padding-right: .4em;
+    vertical-align: bottom;
+    font-family: $map-caption-library;
+  }
+  .contact-phone:before {
+    content: "\e60c";
+  }
+
+  .contact-email:before {
+    content: "\e602";
+  }
+
+  .contact-location:before {
+    content: "\e60d";
+  }
+  @media screen and (min-width: 50em) {
+    & {
+      text-align: left;
+      padding: .5em;
+    }
+    & a {
+      font-size: $map-caption-text-size;
+    }
+    .contact-location {
+      margin-top: 1em;
+    }
+    &.section-arrows-opaque:after {
+      margin-top: .5em;
+    }
+  }
+}

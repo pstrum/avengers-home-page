@@ -1,0 +1,40 @@
+%input-styles {
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 1em;
+  letter-spacing: .1em;
+  color: $primary_font_color;
+}
+
+.contact-form {
+  input {
+    @include placeholder {
+      font-family: $primary_font_family;
+      color: $primary_font_color;
+      letter-spacing: .1em;
+    }
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    @extend %input-styles;
+  }
+
+  @media screen and (min-width: 50em) {
+    input[type="submit"] {
+      margin-left: calc(100% - 155px);
+    }
+    input, textarea, .contact-map-caption {
+      font-size: em($font_smallest);
+    }
+  }
+}
+
+input.form-submit {
+    padding: .7em 2em;
+    font-weight: bold;
+    color: $theme_1_light;
+    border: none;
+    background-color: $background;
+}
+
