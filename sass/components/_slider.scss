@@ -12,12 +12,15 @@ $caption-font-size: em($font-size);
 }
 
 .slider {
+  position: relative;
   figure {
     display: none;
+    position: absolute;
     position: $slider-position;
   }
   .active-slide {
     display: block;
+    animation: slidein 1s;
   }
   img {
     opacity: $slider-opacity;
@@ -33,6 +36,7 @@ $caption-font-size: em($font-size);
   h3 {
     margin-bottom: .1em;
     font-size: $caption-header-size;
+    text-transform: none;
   }
   p {
     font-size: $caption-font-size * .8;

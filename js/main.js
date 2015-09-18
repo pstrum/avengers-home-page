@@ -1,10 +1,17 @@
-$(".bullets a").click(function() {
-  event.preventDefault();
-  var slideID = $(this).attr("href");
+var selectBullet = function(event) {
 
-  $(".bullets a").removeClass("current");
-  $(this).addClass("current");
+    event.preventDefault();
 
-  $(".active-slide").fadeOut().removeClass("active-slide");
-  $(slideID).fadeIn().addClass("active-slide");
-});
+    var slideID = $(this).attr("href");
+
+    $(".bullets a").removeClass("current");
+    $(this).addClass("current");
+
+    $(".active-slide").removeClass("active-slide");
+    $(slideID).addClass("active-slide");
+
+};
+
+$(".bullets a").click(selectBullet);
+
+

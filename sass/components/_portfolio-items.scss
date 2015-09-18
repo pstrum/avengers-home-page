@@ -1,0 +1,41 @@
+$portfolio-hover-color: $theme_2_darkest;
+
+.portfolio-item {
+  position: relative;
+  .portfolio-link:hover {
+    display: block;
+    background: $portfolio-hover-color;
+  }
+  .portfolio-link:hover:after {
+    position: absolute;
+    top: 33%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 1.777em;
+    height: 1.777em;
+    padding-top: .35em;
+    content: "\e608";
+    font-family: 'ico-fonts';
+    font-size: 1.6em;
+    background-color: $theme_1_light;
+    border-radius: 50%;
+  }
+  .portfolio-caption-header {
+    padding: .5em 0;
+    font-weight: bold;
+    font-size: $font_small;
+    color: $secondary_font_color;
+  }
+  .portfolio-category {
+    font-size: em($font_smallest);
+    color: $tertiary_font_color;
+  }
+}
+
+.portfolio-container {
+  .portfolio-item {
+    margin-top: .5em;
+    margin-bottom: 2em;
+  }
+}

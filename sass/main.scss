@@ -154,8 +154,19 @@ HEADER & LOGO
 
 .header-content {
   // padding: 3em 0;
+  position: relative;
   background-size: cover;
   background-image: url(/img/header-background.jpg);
+}
+
+.header-content:after {
+  content: "";
+  margin-top: 5em;
+  width: 180px;
+  height: 145px;
+  border-radius: 10%;
+  background-color: red;
+  transform: rotate(-26deg) skewX(38deg);
 }
 
 .logo {
@@ -169,7 +180,9 @@ HEADER & LOGO
 }
 
 .header-logo-text {
+  color: $secondary_font_color;
   font-weight: lighter;
+  text-transform: none;
 }
 
 .header-logo-text strong {
@@ -325,103 +338,6 @@ PORTFOLIO SECTION
 }
 
 
-
-
-
-
-/*
-PORTFOLIO NAVIGATION
-*/
-
-[title="portfolio-categories"] li {
-  display: block;
-  margin-top: .9em;
-  margin-bottom: .5em;
-  // text-align: center;
-}
-
-.portfolio-menu-item {
-  padding: .3em;
-  font-size: 1.333rem;
-  text-decoration: none;
-  color: #d4d4d4;
-}
-
-.portfolio-selected-category {
-  color: #fff;
-  background-color: #fd6632;
-}
-
-@media screen and (min-width: 50em) {
-
-
-  [title="portfolio navigation"] {
-    // display: -webkit-flex;
-    // display: flex;
-    // -webkit-flex-basis: 100%;
-    // flex-basis: 100%;
-    // -webkit-justify-content: center;
-    // justify-content: center;
-    margin-top: 1em;
-    margin-bottom: 1.777em;
-  }
-
-  [title="portfolio-categories"] li {
-    display: inline-block;
-  }
-
-  .portfolio-menu-item {
-    font-size: 1rem;
-  }
-}
-
-
-/*
-PORTFOLIO ITEMS
-*/
-
-.portfolio-item {
-  position: relative;
-  max-width: 300px;
-  margin-top: .5em;
-  margin-bottom: 2em;
-  // text-align: center;
-}
-
-.portfolio-opacity {
-  opacity: .7;
-}
-
-.portfolio-link-hover:hover {
-  display: block;
-  background: #000;
-}
-
-.portfolio-link-hover:hover:after {
-  position: absolute;
-  top: 30%;
-  left: 42%;
-  width: 1.777em;
-  height: 1.777em;
-  padding-top: .4em;
-  content: "\e608";
-  font-family: 'ico-fonts';
-  font-size: 1.6em;
-  // text-align: center;
-  color: #fff;
-  background-color: #fd6632;
-  border-radius: 50%;
-}
-
-.portfolio-caption-header {
-  padding: .5em 0;
-  font-weight: bold;
-  font-size: 1.333em;
-}
-
-.portfolio-category {
-  color: #7c8387;
-}
 
 /*
 ABOUT
@@ -722,6 +638,12 @@ TEAM
 CONTACT SECTION
 */
 
+
+
+
+
+
+
 .contact-section {
   // display: -webkit-flex;
   // display: flex;
@@ -731,7 +653,7 @@ CONTACT SECTION
   // align-items: center;
   // margin: 0 auto;
   // padding: 2.5em .3em 2em;
-  background-color: #fd6632;
+  background-color: $theme_1_light;
 }
 
 // .contact-section-header {
@@ -742,35 +664,7 @@ CONTACT SECTION
   margin-bottom: 1.5em;
 }
 
-input::-webkit-input-placeholder {
-  font-family: "helvetica neue", arial, sans-serif;
-  color: #fff;
-  letter-spacing: .1em;
-}
 
-input::-moz-placeholder {
-  font-family: "helvetica neue", arial, sans-serif;
-  color: #fff;
-  letter-spacing: .1em;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 1em;
-  margin-bottom: 1em;
-  letter-spacing: .1em;
-}
-
-input[type="submit"]  {
-  padding: .7em 2em;
-  margin: 0 auto;
-  font-weight: bold;
-  color: #fd6632;
-  border: none;
-  background-color: #fff;
-}
 
 .contact-form,
 .contact-map {

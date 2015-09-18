@@ -1,0 +1,30 @@
+%input-styles {
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 1em;
+  letter-spacing: .1em;
+  color: $primary_font_color;
+}
+
+.contact-form {
+  input {
+    @include placeholder {
+      font-family: "helvetica neue", arial, sans-serif;
+      color: $primary_font_color;
+      letter-spacing: .1em;
+    }
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    @extend %input-styles;
+  }
+}
+
+input.form-submit {
+    padding: .7em 2em;
+    font-weight: bold;
+    color: $theme_1_light;
+    border: none;
+    background-color: $background;
+}
