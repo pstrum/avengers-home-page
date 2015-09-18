@@ -1,0 +1,27 @@
+%section-arrows {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 43px;
+  margin: 0 auto 2em;
+}
+
+.section-arrows-white:before,
+.section-arrows-orange:before,
+.section-arrows-black:before,
+.section-arrows-clear:before {
+  @extend %section-arrows;
+}
+
+.section-arrows-orange:before {
+  background: url("/img/triangle-orange.svg") no-repeat;
+}
+
+.section-arrows-black:before {
+  background: url("/img/triangle-black.svg") no-repeat;
+}
+
+.section-arrows-white:before {
+  background: url(/img/header-background.jpg) bottom;
+  -webkit-mask: url("/img/triangle-white.svg") no-repeat;
+}
