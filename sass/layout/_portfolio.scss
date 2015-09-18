@@ -3,3 +3,10 @@
     margin-bottom: 1.5em;
   }
 }
+
+#portfolio {
+  @include flexbox($direction: column, $justify: space-around);
+  @media screen and (min-width: 50em) {
+    @include flexbox($wrap: wrap, $direction: row);
+  }
+}

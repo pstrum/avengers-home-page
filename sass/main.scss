@@ -487,7 +487,7 @@ CONTACT SECTION
 // }
 
 
-@media screen and (min-width: 50em) {
+// @media screen and (min-width: 50em) {
 
   // input, textarea, .contact-map-caption {
   //   font-size: .8em;
@@ -513,12 +513,12 @@ CONTACT SECTION
 
 
 
-  .contact-map-caption a {
+  // .contact-map-caption a {
 
-  }
+  // }
 
-  .contact-location {
-  }
+  // .contact-location {
+  // }
 
   // .contact-map-caption:after {
   //   content: "";
@@ -532,7 +532,7 @@ CONTACT SECTION
   //   background-image: linear-gradient(40.4deg, rgba(0,0,0,.7) 23.5%, rgba(0,0,0,0) 23.5%, rgba(0,0,0,0) 100%);
   //   border-radius: 10%;
   // }
-}
+// }
 
 
 
@@ -564,7 +564,7 @@ footer p {
 MEDIA SCREEN MODIFIERS
 */
 
-@media screen and (min-width: 50em) {
+// @media screen and (min-width: 50em) {
   // .services-container,
   // .portfolio-container,
   // .team,
@@ -588,14 +588,14 @@ MEDIA SCREEN MODIFIERS
   //   text-decoration: none;
   //   text-transform: uppercase;
   // }
-}
+// }
 
-#portfolio {
-  @include flexbox($direction: column, $justify: space-around);
-  @media screen and (min-width: 50em) {
-    @include flexbox($wrap: wrap, $direction: row);
-  }
-}
+// #portfolio {
+//   @include flexbox($direction: column, $justify: space-around);
+//   @media screen and (min-width: 50em) {
+//     @include flexbox($wrap: wrap, $direction: row);
+//   }
+// }
 
 // #team {
 //   @include flexbox($wrap: wrap, $justify: space-around);
@@ -603,9 +603,9 @@ MEDIA SCREEN MODIFIERS
 
 
 
-#contact {
-  @include flexbox($direction: column);
-  @media screen and (min-width: 50em) {
-    @include flexbox($wrap: wrap, $direction: row, $justify: space-between);
-  }
-}
+// #contact {
+//   @include flexbox($direction: column);
+//   @media screen and (min-width: 50em) {
+//     @include flexbox($wrap: wrap, $direction: row, $justify: space-between);
+//   }
+// }
