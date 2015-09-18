@@ -24,7 +24,7 @@
       </ul>
     </nav> -->
     <header id="home" class="header-content">
-      <img class="logo circle" width="21" height="32" src="/img/logo-tear-drop.svg" alt="Logo for Avengers" title="Avengers logo">
+      <img class="logo" width="21" height="32" src="/img/logo-tear-drop.svg" alt="Logo for Avengers" title="Avengers logo">
       <h1 class="header-logo-text">Hi there! We're Avengers, <strong>creative design agency</strong> we build <strong class="curve-underline">awesome</strong> mobile and websites</h1>
     </header>
     <main>
@@ -159,15 +159,15 @@
 
         <nav class="portfolio-navigation">
           <ul>
-            <li><a class="nav-item portfolio-nav-active" href="">All works</a></li>
-            <li><a class="nav-item" href="">Webdesign</a></li>
-            <li><a class="nav-item" href="">UI design</a></li>
-            <li><a class="nav-item" href="">Icon design</a></li>
-            <li><a class="nav-item" href="">Brand &amp; Logotypes</a></li>
+            <li><a class="nav-item portfolio-nav-active" data-category="all-works" href="">All works</a></li>
+            <li><a class="nav-item" data-category="web-design" href="">Webdesign</a></li>
+            <li><a class="nav-item" data-category="ui-design" href="">UI design</a></li>
+            <li><a class="nav-item" data-category="icon-design" href="">Icon design</a></li>
+            <li><a class="nav-item" data-category="logotypes" href="">Brand &amp; Logotypes</a></li>
           </ul>
         </nav>
 
-        <figure class="portfolio-item">
+        <figure class="portfolio-item" data-tags="ui-design, logotypes">
           <a class="portfolio-link" href=""><img class="portfolio-opacity" src="/img/ytube-app.jpg" alt="Image of Youtube app on a handheld device" title="Youtube app image" width="300" height="220"></a>
           <figcaption>
             <h4 class="portfolio-caption-header">Youtube iphone app</h4>
@@ -175,7 +175,7 @@
           </figcaption>
         </figure>
 
-        <figure class="portfolio-item">
+        <figure class="portfolio-item" data-tags="webdesign, logotypes">
           <a class="portfolio-link" href=""><img class="portfolio-opacity" src="/img/hexagon.jpg" alt="Image of Avengers welcome screen" title="Avengers welcome screen" width="300" height="220"></a>
           <figcaption>
             <h4 class="portfolio-caption-header">Hexagon onepage</h4>
@@ -183,7 +183,7 @@
           </figcaption>
         </figure>
 
-        <figure class="portfolio-item">
+        <figure class="portfolio-item" data-tags="icon-design, logotypes">
           <a class="portfolio-link" href=""><img class="portfolio-opacity" src="/img/sketches.jpg" alt="Image of drawing tools and sketches of fantasy characters" title="Fantasy character sketches" width="300" height="220"></a>
           <figcaption>
             <h4 class="portfolio-caption-header">Sketches icon</h4>
@@ -191,7 +191,7 @@
           </figcaption>
         </figure>
 
-        <figure class="portfolio-item">
+        <figure class="portfolio-item" data-tags="ui-design, logotypes">
           <a class="portfolio-link" href=""><img class="portfolio-opacity" src="/img/logotypes.jpg" alt="Image of logotypes on screen" title="Logotypes" width="300" height="220"></a>
           <figcaption>
             <h4 class="portfolio-caption-header">Logotypes volume</h4>
@@ -199,7 +199,7 @@
           </figcaption>
         </figure>
 
-        <figure class="portfolio-item">
+        <figure class="portfolio-item" data-tags="webdesign, logotypes">
           <a class="portfolio-link" href=""><img class="portfolio-opacity" src="/img/flight.jpg" alt="Image of app screen with points displayed" title="Points screen" width="300" height="220"></a>
           <figcaption>
             <h4 class="portfolio-caption-header">Flight control</h4>
@@ -207,7 +207,7 @@
           </figcaption>
         </figure>
 
-        <figure class="portfolio-item">
+        <figure class="portfolio-item" data-tags="icon-design, logotypes">
           <a class="portfolio-link" href=""><img class="portfolio-opacity" src="/img/ytube-app.jpg" alt="Image of Youtube app on a handheld device" title="Youtube app image" width="300" height="220"></a>
           <figcaption>
             <h4 class="portfolio-caption-header">Youtube app</h4>
@@ -215,7 +215,7 @@
           </figcaption>
         </figure>
 
-        <figure class="portfolio-item">
+        <figure class="portfolio-item" data-tags="ui-design, logotypes">
           <a class="portfolio-link" href=""><img class="portfolio-opacity" src="/img/management.jpg" alt="Image of app screen for claim management" title="Claim management screen" width="300" height="220"></a>
           <figcaption>
             <h4 class="portfolio-caption-header">Management</h4>
@@ -223,7 +223,7 @@
           </figcaption>
         </figure>
 
-        <figure class="portfolio-item">
+        <figure class="portfolio-item" data-tags="webdesign, logotypes">
           <a class="portfolio-link" href=""><img class="portfolio-opacity" src="/img/korean.jpg" alt="Image of recipe app screen for korean bulgogi beef" title="Korean beef recipe screen" width="300" height="220"></a>
           <figcaption>
             <h4 class="portfolio-caption-header">Korean beef</h4>
@@ -231,7 +231,7 @@
           </figcaption>
         </figure>
 
-        <figure class="portfolio-item">
+        <figure class="portfolio-item" data-tags="icon-design, logotypes">
           <a class="portfolio-link" href=""><img class="portfolio-opacity" src="/img/facebook-thumb.jpg" alt="Image of Facebook like and dislike thumb icons" title="Facebook thumbs" width="300" height="220"></a>
           <figcaption>
             <h4 class="portfolio-caption-header">Facebook thumbs</h4>
@@ -474,6 +474,7 @@
       </ul>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/port_nav.js"></script>
   </body>
 </html>

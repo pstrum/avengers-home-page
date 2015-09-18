@@ -1,25 +1,9 @@
-.header-content {
-
-}
-
-.contact-section {
-  background-color: $theme_1_light;
-  .contact-text,
-  .contact-form {
-    margin-bottom: 1.5em;
-  }
-  @media screen and (min-width: 50em) {
-    position: relative;
-    .contact-text,
-    .contact-form {
-      margin-bottom: 0;
-    }
-  }
-}
-
 .services-container {
   position: relative;
   background-color: #fd6632;
+  .header-container {
+    margin-bottom: 1.5em;
+  }
   .services-intro {
     @media screen and (min-width: 50em) {
       margin-bottom: 2em;
