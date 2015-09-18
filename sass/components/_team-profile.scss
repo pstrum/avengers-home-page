@@ -1,3 +1,7 @@
+%text-style {
+  color: $theme_2;
+}
+
 .team-profiles-container {
   @include flexbox($wrap: wrap, $justify: space-around);
   .profile-header {
@@ -28,11 +32,11 @@
 }
 
 .team-text {
-  color: $theme_2;
-  line-height: 1.6em;
+  @extend %text-style;
 }
 
 .profile-text {
+  @extend %text-style;
   font-size: em($font_smallest);
   padding: 0 1em;
 }
