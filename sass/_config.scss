@@ -21,7 +21,7 @@ body {
 }
 
 header, article {
-  padding: 2em 1em;
+  padding: 0 1em 2em;
   @media screen and (min-width: 50em) {
     padding: 0 calc(20% - 7.5em) 6em;
   }
