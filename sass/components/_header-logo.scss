@@ -1,0 +1,37 @@
+.header-content {
+  position: relative;
+  background-size: cover;
+  background-image: url(/img/header-background.jpg);
+  .logo {
+    margin: 1em auto;
+  }
+  @media screen and (min-width: 50em) {
+    padding-top: 4em;
+    padding-bottom: 7em;
+  }
+}
+
+.logo {
+  opacity: 1;
+  height: 4em;
+  width: 4em;
+  padding: 1em 0;
+  background: #fd6632;
+}
+
+.header-logo-text {
+  color: $secondary_font_color;
+  font-weight: lighter;
+  text-transform: none;
+  & strong {
+    font-weight: normal;
+    line-height: 1.3;
+  }
+}
+
+.curve-underline {
+  padding-bottom: .1em;
+  background-size: cover;
+  background: url("/img/orange-underline.svg") no-repeat;
+  background-position: bottom;
+}
