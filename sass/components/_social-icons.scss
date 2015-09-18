@@ -1,13 +1,16 @@
 %social-icon-style {
-  padding: 0.3em;
+  padding: 0.3em 0.4em;
   font-size: 1.3em;
+  &:hover {
+    background-color: $theme_1_light;
+  }
   @media screen and (min-width: 50em) {
     font-size: 1em;
   }
 }
 
 .social-icons li {
-  margin: 1em 0.1em;
+  display: inline-block;
 }
 
 .screen-reader-only {

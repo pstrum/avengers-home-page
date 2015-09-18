@@ -1,0 +1,72 @@
+/* team paragraph default 16
+person title heading 2
+job title and paragraph 13
+matthew font small 15
+matthew font smallest 13 */
+
+.client-container {
+  @include flexbox($wrap: wrap, $justify: space-between);
+}
+
+.clients {
+  // min-width: 20em;
+  margin-top: 1em;
+}
+
+.client-figure {
+  margin: 1em 0;
+  @media screen and (min-width: 50em) {
+    @include flexbox;
+  }
+}
+
+.client-figure {
+  margin: 1em 0;
+}
+
+.client-image {
+  width: 5em;
+  margin: 0 auto;
+  opacity: 1;
+}
+
+.client-header {
+  color: $secondary_font_color;
+  margin: 0.7em 0;
+}
+
+.client-name {
+  color: #fd6632;
+  display: block;
+}
+
+.client-caption {
+  width: 60vw;
+  max-width: 67em;
+}
+
+.client-button {
+  background-color: $theme_1_light;
+  font-size: 0.75em;
+  height: 2.75em;
+  padding: 0.9em 1.1em;
+  margin: 0.5em;
+}
+
+@media screen and (min-width: 50em) {
+  .client-image {
+    margin-right: 2vw;
+  }
+
+  .client-header {
+    margin-top: 0;
+  }
+
+  .client-caption, .client-name {
+    display: inline-block;
+  }
+
+  .client-caption {
+    text-align: left;
+  }
+}

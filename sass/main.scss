@@ -7,6 +7,7 @@
 @import "lib/utils/flexbox";
 @import "lib/utils/icons";
 @import "components/index";
+@import "layout/index";
 
 /*
 MODIFIERS
@@ -15,10 +16,6 @@ MODIFIERS
 // .white-color {
 //   color: #fff;
 // }
-
-.circle {
-  border-radius: 100%;
-}
 
 /*
 SECTION HEADERS
@@ -465,92 +462,14 @@ TEAM
 //   padding: 0.7em 0;
 // }
 
-.team-profile, .social-icons li {
-  display: inline-block;
-}
 
-.team-profile {
-  width: 15em;
-  margin: 1em 0;
-}
 
 // .team-header {
 //   line-height: 1.5em;
 //   font-weight: bold;
 // }
 
-.team-text {
-  color: #7c8387;
-  font-size: 0.9em;
-  line-height: 1.5em;
-  margin: 0 auto;
-}
 
-.team-description-text {
-  font-size: 1em;
-  padding: 0 1em;
-  margin-bottom: 1em;
-}
-
-.profile-header {
-  color: $secondary_font_color;
-  font-size: 1.5em;
-}
-
-.profile-text {
-  width: 95%;
-}
-
-.profile-image {
-  width: 11em;
-  margin: 1em auto 0;
-}
-
-.clients {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  // min-width: 20em;
-  margin-top: 1em;
-}
-
-.client-figure {
-  margin: 1em 0;
-}
-
-.client-image {
-  width: 5em;
-  margin: 0 auto;
-  opacity: 1;
-}
-
-.client-header {
-  color: $secondary_font_color;
-  margin: 0.7em 0;
-}
-
-.client-name {
-  color: #fd6632;
-  display: block;
-}
-
-.client-caption {
-  width: 60vw;
-  max-width: 67em;
-}
-
-.client-button {
-  background-color: $theme_1_light;
-  font-size: 0.75em;
-  height: 2.75em;
-  padding: 0.9em 1.1em;
-  margin: 0.5em;
-}
-
-@media screen and (min-width: 50em) {
   // .gray-line {
   //   background: url("/img/horizontal-black-line.svg") no-repeat left,
   //               url("/img/horizontal-black-line.svg") no-repeat right;
@@ -560,10 +479,6 @@ TEAM
   //   margin: 0 3%;
   //   background-size: calc(50% - 0.6em);
   // }
-
-  .team-description-text {
-    margin-bottom: 3em;
-  }
 
   // .social-icons a {
   //   font-size: 1em;
@@ -585,22 +500,7 @@ TEAM
   //   margin: 1em 0;
   // }
 
-  .client-image {
-    margin-right: 2vw;
-  }
 
-  .client-header {
-    margin-top: 0;
-  }
-
-  .client-caption, .client-name {
-    display: inline-block;
-  }
-
-  .client-caption {
-    text-align: left;
-  }
-}
 
 
 /*
@@ -753,22 +653,11 @@ MEDIA SCREEN MODIFIERS
   }
 }
 
-#team {
-  @include flexbox($wrap: wrap, $justify: space-around);
-}
+// #team {
+//   @include flexbox($wrap: wrap, $justify: space-around);
+// }
 
-.clients {
-  @include flexbox($wrap: wrap, $justify: space-between);
-  // min-width: 20em;
-  margin-top: 1em;
-}
 
-.client-figure {
-  margin: 1em 0;
-  @media screen and (min-width: 50em) {
-    @include flexbox;
-  }
-}
 
 #contact {
   @include flexbox($direction: column);

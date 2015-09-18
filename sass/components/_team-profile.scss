@@ -1,0 +1,43 @@
+.team-profiles-container {
+  @include flexbox($wrap: wrap, $justify: space-around);
+  .profile-header {
+    margin-bottom: 0.1em;
+  }
+  .team-profile {
+    display: inline-block;
+    width: 15em;
+    margin: 1em 0;
+  }
+}
+
+.team-profile {
+  .profile-image {
+    margin: 1em auto 0;
+    width: 11em;
+  }
+}
+
+.profile-figure {
+  .social-icons {
+    margin: 1.5em 0;
+  }
+}
+
+.profile-image {
+  border-radius: 100%;
+}
+
+.team-text {
+  color: $theme_2;
+  line-height: 1.6em;
+}
+
+.profile-text {
+  font-size: em($font_smallest);
+  padding: 0 1em;
+}
+
+.profile-header {
+  color: $secondary_font_color;
+}
+
