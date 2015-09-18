@@ -27,14 +27,14 @@ header, article {
   }
 }
 
-button {
-  background-color: #fd6632;
-  border: none;
-}
+// button {
+//   background-color: #fd6632;
+//   border: none;
+// }
 
-button:active, a:active {
-  opacity: 0.8;
-}
+// button:active, a:active {
+//   opacity: 0.8;
+// }
 
 button:hover {
   cursor: pointer;
@@ -60,7 +60,26 @@ li {
 
 progress[value] {
   -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
+  border: none;
+  color: $theme_1_light;
   height: 1.2em;
   width: 100%;
+  @media screen and (min-width: 50em) {
+    height: 1.8em;
+  }
 }
+
+progress[value]::-webkit-progress-bar {
+  background-color: $theme_2_darker;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: $theme_1_light;
+}
+
+progress[value]::-moz-progress-bar {
+  background-color: $theme_1_light;
+}
+

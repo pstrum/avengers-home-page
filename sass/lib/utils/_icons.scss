@@ -9,26 +9,21 @@ $icons: (
   dribbble: '\e606',
   linkedin2: '\e607',
   menu: '\e60f',
-  drop: '\e60e',
   plus: '\e608',
   chevron-left: '\e609',
   chevron-right: '\e60a',
   brush: '\e60b',
   phone: '\e60c',
-  pin: 'e\60d'
+  pin: '\e60d'
 );
 
-%icon-fonts {
+%font-face {
   font-family: 'ico-fonts';
-  font-weight: normal;
-  font-style: normal;
-  display: inline-block;
-  text-decoration: inherit;
 }
 
 @each $icon in $icons {
   .icon-#{nth($icon, 1)}:before {
     content: nth($icon, 2);
-    @extend %icon-fonts;
+    @extend %font-face;
   }
 }

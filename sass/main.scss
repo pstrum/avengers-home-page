@@ -3,12 +3,9 @@
 @import "color/color";
 @import "config";
 @import "typography";
-@import "lib/utils/icons";
 @import "lib/utils/flexbox";
-@import "components/headers";
-@import "components/bundle";
+@import "lib/utils/icons";
 @import "components/index";
-
 
 /*
 MODIFIERS
@@ -467,14 +464,6 @@ ABOUT
   margin-bottom: 0.3em;
 }
 
-progress[value]::-webkit-progress-bar {
-  background-color: #3a3a3a;
-}
-
-progress[value]::-webkit-progress-value {
-  background-color: #fd6632;
-}
-
 .join-us-header {
   font-weight: normal;
   font-size: 1.5em;
@@ -482,6 +471,7 @@ progress[value]::-webkit-progress-value {
 }
 
 .contact-us-button {
+  background-color: $theme_1_light;
   font-weight: bold;
   padding: 0.9em 3.5em;
 }
@@ -517,10 +507,6 @@ progress[value]::-webkit-progress-value {
 
   .skills li {
     margin-bottom: 1.4em;
-  }
-
-  progress[value] {
-    height: 1.8em;
   }
 
   .join-us-header {
@@ -593,35 +579,6 @@ TEAM
   margin: 1em auto 0;
 }
 
-.social-icons li {
-  padding: 0.3em;
-  margin: 1em 0.1em;
-}
-
-.social-icons a {
-  font-size: 1.3em;
-}
-
-.icon-facebook {
-  background-color: #305fc6;
-}
-
-.icon-twitter {
-  background-color: #32bdff;
-}
-
-.icon-dribbble {
-  background-color: #dd2667;
-}
-
-.icon-linkedin2 {
-  background-color: #2ca1eb;
-}
-
-.icon-google-plus {
-  background-color: #fabc00;
-}
-
 .clients {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -659,6 +616,7 @@ TEAM
 }
 
 .client-button {
+  background-color: $theme_1_light;
   font-size: 0.75em;
   height: 2.75em;
   padding: 0.9em 1.1em;
@@ -680,9 +638,9 @@ TEAM
     margin-bottom: 3em;
   }
 
-  .social-icons a {
-    font-size: 1em;
-  }
+  // .social-icons a {
+  //   font-size: 1em;
+  // }
 
   // .client-section-header {
   //   margin: 0 19.25%;

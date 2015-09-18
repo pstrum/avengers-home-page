@@ -1,0 +1,40 @@
+%social-icon-style {
+  padding: 0.3em;
+  font-size: 1.3em;
+  @media screen and (min-width: 50em) {
+    font-size: 1em;
+  }
+}
+
+.social-icons li {
+  margin: 1em 0.1em;
+}
+
+.screen-reader-only {
+  display: none;
+}
+
+.icon-facebook {
+  @extend %social-icon-style;
+  background-color: $facebook_color;
+}
+
+.icon-twitter {
+  @extend %social-icon-style;
+  background-color: $twitter_color;
+}
+
+.icon-dribbble {
+  @extend %social-icon-style;
+  background-color: $dribbble_color;
+}
+
+.icon-linkedin2 {
+  @extend %social-icon-style;
+  background-color: $linkedin_color;
+}
+
+.icon-google-plus {
+  @extend %social-icon-style;
+  background-color: $google_plus_color;
+}

@@ -1,37 +1,16 @@
-@mixin header-style($color: null) {
-  color: $color;
-  margin: 0 1%;
+.header-container {
+  @include flexbox($justify: center);
+  width: 100%;
+  h1, h2 {
+    margin: 0 1%;
+  }
+}
+
+.header-light {
   white-space: nowrap;
 }
 
-.primary-header-light {
-  @include flexbox($justify: center);
-  width: 100%;
-  h1 {
-    @include header-style;
-  }
-}
-
-.primary-header-dark {
-  @include flexbox($justify: center);
-  width: 100%;
-  h1 {
-    @include header-style($secondary_font_color);
-  }
-}
-
-.secondary-header-light {
-  @include flexbox($justify: center);
-  width: 100%;
-  h2 {
-    @include header-style;
-  }
-}
-
-.secondary-header-dark {
-  @include flexbox($justify: center);
-  width: 100%;
-  h2 {
-    @include header-style($secondary_font_color);
-  }
+.header-dark {
+  color: $secondary_font_color;
+  white-space: nowrap;
 }

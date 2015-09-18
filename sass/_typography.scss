@@ -27,3 +27,14 @@ h1, h2, h3 {
 a {
   text-decoration: none;
 }
+
+@font-face {
+  font-family: 'ico-fonts';
+  src:url('/css/fonts/ico-fonts.eot');
+  src:url('/css/fonts/ico-fonts.eot') format('embedded-opentype'),
+    url('/css/fonts/ico-fonts.ttf') format('truetype'),
+    url('/css/fonts/ico-fonts.woff') format('woff'),
+    url('/css/fonts/ico-fonts.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
