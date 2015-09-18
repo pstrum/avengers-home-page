@@ -1,0 +1,34 @@
+.skills-container {
+  .header-container {
+    margin-bottom: 1em;
+  }
+  @media screen and (min-width: 50em) {
+    .header-container {
+      margin-bottom: 2em;
+    }
+  }
+}
+
+.skills-list {
+  li {
+    margin-bottom: 1em;
+  }
+  @media screen and (min-width: 50em) {
+    li {
+      margin-bottom: 1.3em;
+    }
+  }
+}
+
+.progress-figure {
+  figcaption {
+    margin-bottom: 0.3em;
+  }
+}
+
+.progress-header {
+  font-size: em($font_smallest);
+  font-weight: normal;
+  color: $theme_2_light;
+  text-align: left;
+}

@@ -69,7 +69,7 @@
 }
 
 .client-text {
-  @extend %text-style;
+  color: $theme_2;
   font-size: em($font_smallest);
 }
 
