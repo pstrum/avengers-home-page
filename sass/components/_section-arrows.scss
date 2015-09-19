@@ -25,11 +25,6 @@
   background: url("/img/triangle-white.svg") no-repeat;
 }
 
-.section-arrows-clear:before {
-  background: url(/img/header-background.jpg) bottom;
-  -webkit-mask: url("/img/triangle-white.svg") no-repeat;
-}
-
 .section-arrows-opaque:after {
   @extend %section-arrows;
   background: url("/img/triangle-opaque.svg") no-repeat;

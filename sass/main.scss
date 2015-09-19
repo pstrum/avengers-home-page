@@ -123,35 +123,40 @@ SECTION HEADERS
 MENU
 */
 
-.menu {
-  position: fixed;
-  width: 100%;
-  padding-bottom: 0.5em;
-  border-bottom: 2px solid #d4d4d4;
-  background-color: rgba(255, 255, 255, 0.95);
-  z-index: 1000;
-}
+// .menu {
+//   position: fixed;
+//   width: 100%;
+//   padding-bottom: 0.5em;
+//   border-bottom: 2px solid $theme_2_light;
+//   background-color: $background;
+//   z-index: 1000;
 
-.menu a {
-  display: inline-block;
-  width: 30%;
-  color: #7c8387;
-  font-weight: bold;
-  padding-top: 0.5em;
-}
+//   & a {
+//     width: 30%;
+//     margin: 0 1em;
+//     font-weight: bold;
+//     color: $theme_2;
+//     padding-top: 0.1em;
+//   }
 
-@media screen and (min-width: 50em) {
-  .menu {
-    position: static;
-    padding: 0.8em calc(20% - 3em);
-  }
+//   li {
+//     display: inline-block;
+//     padding: .2em;
+//   }
+//   .current-page {
+//     color: $secondary_font_color;
+//   }
+// }
 
-  .menu a {
-    padding-top: 0.1em;
-    width: 16%;
-  }
-}
-
+// @media screen and (min-width: 50em) {
+//   .menu {
+//     position: static;
+//     padding: 0.8em calc(20% - 3em);
+//     & a {
+//       width: 16%;
+//     }
+//   }
+// }
 /*
 HEADER & LOGO
 */
@@ -259,7 +264,7 @@ BUNDLE SECTION DISPLAY FLEX
 PORTFOLIO SECTION
 */
 
-.portfolio-container {
+// .portfolio-container {
   // display: -webkit-flex;
   // display: flex;
   // -webkit-flex-direction: column;
@@ -269,7 +274,7 @@ PORTFOLIO SECTION
   // max-width: 68em;
   // padding: 3.5em 0 0;
   // margin: 0 auto;
-}
+// }
 
 // .portfolio-section-header {
 //   width: 100%;
@@ -278,7 +283,7 @@ PORTFOLIO SECTION
 //   margin-bottom: .5em;
 // }
 
-@media screen and (min-width: 50em) {
+// @media screen and (min-width: 50em) {
 
   // .portfolio-section-header {
   //   margin: 0 6%;
@@ -298,7 +303,7 @@ PORTFOLIO SECTION
   //   justify-content: space-around;
   //   // padding-top: 0;
   // }
-}
+// }
 
 
 
