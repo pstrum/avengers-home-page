@@ -1,0 +1,13 @@
+footer {
+  padding: 2em;
+  .footer-text {
+    margin-bottom: 1em;
+  }
+  .social-icons {
+    margin-bottom: 1em;
+  }
+  @media screen and (min-width: 50em) {
+    padding-top: 5em;
+    padding-bottom: 8em;
+  }
+}
