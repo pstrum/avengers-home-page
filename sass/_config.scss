@@ -20,25 +20,16 @@ body {
   text-align: center;
 }
 
-header, article {
+header, article, footer {
   padding: 0 1em 2em;
   @media screen and (min-width: 50em) {
     padding: 0 calc(20% - 7.5em) 6em;
   }
 }
 
-article {
+article, footer {
   position: relative;
 }
-
-// button {
-//   background-color: #fd6632;
-//   border: none;
-// }
-
-// button:active, a:active {
-//   opacity: 0.8;
-// }
 
 button:hover {
   cursor: pointer;
@@ -53,7 +44,7 @@ img {
 input,
 textarea {
   display: block;
-  background-color: #be4c25;
+  background-color: $theme_1;
   border: none;
 }
 

@@ -21,6 +21,7 @@
   }
 
   @media screen and (min-width: 50em) {
+    width: 49%;
     input[type="submit"] {
       margin-left: calc(100% - 155px);
     }

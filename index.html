@@ -13,22 +13,22 @@
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
-<!--     <nav class="menu">
+    <nav class="menu">
       <ul>
-        <li><a href="#home">Home.</a></li>
+        <li><a href="#home" class="current-page">Home.</a></li>
         <li><a href="#services">Services.</a></li>
         <li><a href="#portfolio">Portfolio.</a></li>
         <li><a href="#about">About.</a></li>
         <li><a href="#team">Team.</a></li>
         <li><a href="#contact">Contact.</a></li>
       </ul>
-    </nav> -->
+    </nav>
     <header id="home" class="header-content">
       <img class="logo" width="21" height="32" src="/img/logo-tear-drop.svg" alt="Logo for Avengers" title="Avengers logo">
       <h1 class="header-logo-text">Hi there! We're Avengers, <strong>creative design agency</strong> we build <strong class="curve-underline">awesome</strong> mobile and websites</h1>
     </header>
     <main>
-      <article id="services" class="services-container section-arrows-clear">
+      <article id="services" class="services-container section-arrows-white">
         <div class="header-container">
           <svg height="2" width="50%">
              <line x1="0" y1="0" x2="100%" y2="0" style="stroke:#ffffff;stroke-width:2" />
@@ -68,7 +68,7 @@
           <section class="bundle">
             <h3>Basic</h3>
             <ul>
-              <li class="bundle-plan"><span>$5.99</span> /MONTH</li>
+              <li class="bundle-plan"><span class="bundle-price">$5.99</span> /MONTH</li>
               <li>3 Projects</li>
               <li>2 Users</li>
               <li>1 Gb</li>
@@ -108,10 +108,10 @@
             <h3>Premium</h3>
             <ul>
               <li class="bundle-plan"><span class="bundle-price">$49.99</span> /MONTH</li>
-              <li>UNLIMITED Projects</li>
-              <li>UNLIMITED Users</li>
+              <li><span>Unlimited</span> Projects</li>
+              <li><span>Unlimited</span> Users</li>
               <li>1000 Gb User</li>
-              <li>UNLIMITED Calendar</li>
+              <li><span>Unlimited</span> Calendar</li>
             </ul>
             <div class="bundle-button-container">
               <a class="button" href="">Sign up</a>
@@ -135,7 +135,7 @@
             <figcaption>
               <h3>Crispers</h3>
               <p>Nice, crispy and<br />creative landing page</p>
-              <a href="https://www.google.com/?gws_rd=ssl#q=crispers" class="download-button">GET THE APP</a>
+              <a href="https://www.google.com/?gws_rd=ssl#q=crispers" class="download-button">Get the app</a>
               <p class="gotcha">Available for iPhone and iPad</p>
             </figcaption>
           </figure>
@@ -144,7 +144,34 @@
             <figcaption>
               <h3>Crispers</h3>
               <p>Nice, crispy and<br />creative landing page</p>
-              <a href="https://www.google.com/?gws_rd=ssl#q=crispers" class="download-button">GET THE APP</a>
+              <a href="https://www.google.com/?gws_rd=ssl#q=crispers" class="download-button">Get the App</a>
+              <p class="gotcha">Available for iPhone and iPad</p>
+            </figcaption>
+          </figure>
+          <figure id="third-slide">
+            <img class="desktop-slide" src="/img/slider.jpg" width="940" height="336" alt="image advertising Crispers iphone app" title="Crispers/Couders app">
+            <figcaption>
+              <h3>Crispers</h3>
+              <p>Nice, crispy and<br />creative landing page</p>
+              <a href="https://www.google.com/?gws_rd=ssl#q=crispers" class="download-button">Get the app</a>
+              <p class="gotcha">Available for iPhone and iPad</p>
+            </figcaption>
+          </figure>
+          <figure id="fourth-slide">
+            <img class="desktop-slide" src="/img/mountains.jpg" width="940" height="336" alt="image advertising Crispers iphone app" title="Crispers/Couders app">
+            <figcaption>
+              <h3>Crispers</h3>
+              <p>Nice, crispy and<br />creative landing page</p>
+              <a href="https://www.google.com/?gws_rd=ssl#q=crispers" class="download-button">Get the App</a>
+              <p class="gotcha">Available for iPhone and iPad</p>
+            </figcaption>
+          </figure>
+          <figure id="fifth-slide">
+            <img class="desktop-slide" src="/img/slider.jpg" width="940" height="336" alt="image advertising Crispers iphone app" title="Crispers/Couders app">
+            <figcaption>
+              <h3>Crispers</h3>
+              <p>Nice, crispy and<br />creative landing page</p>
+              <a href="https://www.google.com/?gws_rd=ssl#q=crispers" class="download-button">Get the app</a>
               <p class="gotcha">Available for iPhone and iPad</p>
             </figcaption>
           </figure>
@@ -199,7 +226,7 @@
           </figcaption>
         </figure>
 
-        <figure class="portfolio-item" data-tags="webdesign, logotypes">
+        <figure class="portfolio-item" data-tags="web-design, logotypes">
           <a class="portfolio-link" href=""><img class="portfolio-opacity" src="/img/flight.jpg" alt="Image of app screen with points displayed" title="Points screen" width="300" height="220"></a>
           <figcaption>
             <h4 class="portfolio-caption-header">Flight control</h4>
@@ -223,7 +250,7 @@
           </figcaption>
         </figure>
 
-        <figure class="portfolio-item" data-tags="webdesign, logotypes">
+        <figure class="portfolio-item" data-tags="web-design, logotypes">
           <a class="portfolio-link" href=""><img class="portfolio-opacity" src="/img/korean.jpg" alt="Image of recipe app screen for korean bulgogi beef" title="Korean beef recipe screen" width="300" height="220"></a>
           <figcaption>
             <h4 class="portfolio-caption-header">Korean beef</h4>
@@ -453,7 +480,7 @@
         </figure>
       </article>
     </main>
-    <footer>
+    <footer class="section-arrows-orange">
       <p class="footer-text">Theme by <span class="footer-name">Pierre Borodin</span> <span class="footer-copyright">&copy; copyright 2012</span></p>
       <ul class="social-icons">
         <li>

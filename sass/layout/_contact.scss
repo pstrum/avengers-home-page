@@ -18,3 +18,10 @@
     }
   }
 }
+
+#contact {
+  @include flexbox($direction: column);
+  @media screen and (min-width: 50em) {
+    @include flexbox($wrap: wrap, $direction: row, $justify: space-between);
+  }
+}

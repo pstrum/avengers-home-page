@@ -1,22 +1,28 @@
+// Attempted to impletment this using Jed's approach.
+// Isnt' quite working.
+
+
 var showCategory = function(event) {
 
-    event.preventDefault();
+  event.preventDefault();
 
-    var category = $(this).data("category");
+  var category = $(this).data("category");
 
-    console.log(category);
+  console.log(category);
 
-    if (category === 'all-works') {
-      $('[data-category]').show();
-      return;
-    }
+  if (category === 'all-works') {
+    $('[data-category]').show();
+    return;
+  }
 
-    $('figure [data-tags*="' + category + '"]').addClass('current-category');
-    // $(".bullets a").removeClass("current");
-    // $(this).addClass("current");
+  $('[data-tags]').hide();
 
-    // $(".active-slide").removeClass("active-slide");
-    // $(slideID).addClass("active-slide");
+  $('[data-tags*="' + category + '"]').show();
+
+  $('.nav-item.portfolio-nav-active').removeClass('portfolio-nav-active');
+
+  $(this).addClass('portfolio-nav-active');
+
 
 };
 

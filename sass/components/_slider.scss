@@ -40,6 +40,7 @@ $caption-font-size: em($font-size);
   }
   p {
     font-size: $caption-font-size * .8;
+    line-height: 1;
     @extend %text-shadow;
   }
   .download-button {
