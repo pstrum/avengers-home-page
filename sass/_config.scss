@@ -27,6 +27,10 @@ header, article {
   }
 }
 
+article, footer {
+  position: relative;
+}
+
 button:hover {
   cursor: pointer;
 }
